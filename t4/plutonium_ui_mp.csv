@@ -1,0 +1,8 @@
+menufile,ui_mp/main.menu
+menufile,ui_mp/createserver.menu
+menufile,ui_mp/manage_friends.menu
+menufile,ui_mp/options_game_pc.menu
+menufile,ui_mp/options_graphics_pc.menu
+menufile,ui_mp/options_multi.menu
+menufile,ui_mp/pc_joinchoosegamemode.menu
+menufile,ui_mp/scriptmenus/class.menu

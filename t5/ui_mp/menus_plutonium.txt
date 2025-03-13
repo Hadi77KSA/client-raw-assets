@@ -1,0 +1,4 @@
+// plutonium menu defs
+{
+	loadMenu { "ui_mp/main_plutonium.menu" }
+}

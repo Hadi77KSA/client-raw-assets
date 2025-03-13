@@ -1,0 +1,66 @@
+#include "ui/menudef.h"
+#include "ui_mp/common_macro.inc"
+#define 	OPTIONS_STYLE			1
+#define 	CHOICE_SEP_1			25
+#include "ui_mp/menustyle.inc"
+#include "ui/choices_setup_common.menu"
+
+{
+	menuDef 
+	{
+		name			"options_multi"
+		fullScreen		0
+		rect			0 0 640 480
+		focusColor		COLOR_FOCUSED
+		soundloop		""
+		onOpen
+		{
+			exec "setfromdvar ui_name name";
+			
+			close options_look;
+			close options_move;
+			close options_shoot;
+			close options_invehicle;
+			close options_graphics;
+			close options_sound;
+			close options_game;
+			close options_view;
+			close options_defaults;
+			close options_driverinfo;
+			close options_credits;
+			close options_graphics_defaults;
+			close options_graphics_texture;
+			close options_control_defaults;
+			close options_coop;
+
+			setLocalVarBool ui_hideBack 1;
+		}
+		onClose
+		{
+			setLocalVarBool ui_hideBack 0;
+			exec "setfromdvar name ui_name";
+			uiScript "updateClanInProfile"
+		}
+		onESC 
+		{ 
+			close self;		
+		}
+
+		#include "ui_mp/leftside_options.inc"
+		
+		CHOICE_SECTION_TITLE_VIS( 21, "@MENU_MULTIPLAYER_OPTIONS_CAP", when( dvarint( ui_multiplayer ) ); )
+		CHOICE_SECTION_TITLE_VIS( 21, "@MENU_COOPERATIVE_OPTIONS_CAP", when( !dvarint( ui_multiplayer ) ); )
+
+		CHOICE_DVARFLOATLIST_VIS( 22, "@MENU_TEAM_INDICATOR", team_indicator, { "@MENU_FULL_TEAM_INDICATOR" 0 "@MENU_ABBREVIATED_TEAM_INDICATOR" 1 "@MENU_ICON_TEAM_INDICATOR" 2 }, ;, 1 )
+#ifdef PC_INGAME
+		CHOICE_DDVAR_VIS( 23, "@MENU_CLAN_TAG", clanName, when( !dvarint( ui_multiplayer ) ) )
+		CHOICE_DVAREDIT_VIS( 23, "@MENU_CLAN_TAG", clanName, 4, 4, ;, when( dvarint( ui_multiplayer ) ) )
+#else
+		CHOICE_DVAREDIT_VIS( 23, "@MENU_CLAN_TAG", clanName, 4, 4, ;, MENU_TRUE )
+#endif
+
+		CHOICE_DVARYESNO_VIS( 24, "@MENU_ALLOW_DOWNLOAD", cl_allowdownload, ;,when( dvarint( ui_multiplayer ) ) )
+
+		CHOICE_KEYBINDHELP
+	}
+}
