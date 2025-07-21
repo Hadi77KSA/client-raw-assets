@@ -1,8 +1,5 @@
-menufile,ui_mp/plutonium_manage_friends.menu
 menufile,ui_mp/plutonium_options_multi.menu
 menufile,ui/plutonium_main.menu
 menufile,ui/plutonium_options_game_pc.menu
 menufile,ui/plutonium_options_graphics_pc.menu
-menufile,ui/plutonium_pc_joinchoosegamemode.menu
 menufile,ui/plutonium_xboxlive_lobby.menu
-rawfile,ui/plutonium_online_status.inc

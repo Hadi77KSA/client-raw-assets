@@ -1,8 +1,5 @@
-menufile,ui_mp/main.menu
-menufile,ui_mp/createserver.menu
-menufile,ui_mp/manage_friends.menu
-menufile,ui_mp/options_game_pc.menu
-menufile,ui_mp/options_graphics_pc.menu
-menufile,ui_mp/options_multi.menu
-menufile,ui_mp/pc_joinchoosegamemode.menu
-menufile,ui_mp/scriptmenus/class.menu
+menufile,ui_mp/plutonium_main.menu
+menufile,ui_mp/plutonium_createserver.menu
+menufile,ui/plutonium_options_game_pc.menu
+menufile,ui/plutonium_options_graphics_pc.menu
+menufile,ui_mp/plutonium_options_multi.menu
