@@ -1,0 +1,458 @@
+#include "ui/menudef.h"
+
+#define ORIGIN_MENU_TREE		54 64
+#define ORIGIN_MENU_TITLE		300 64
+#define TREE_COLOR				1 1 1 0.5
+
+#define ORIGIN_BUTTON_BACK		52 438
+#define ORIGIN_BUTTON_CONTINUE	508 438
+#define ORIGIN_POPUPTITLE		320 160
+
+#define HIGHLIGHT_COLOR			0.3 0.35 0.55 0.25
+#define OPTIONS_HEADING_JOIN_COLOR	.35 .4 .2 .4
+
+{
+	menuDef
+	{
+		name			menu_lan
+		fullscreen		1
+		rect			0 0 640 480
+		focusColor		COLOR_FOCUSED
+		style			WINDOW_STYLE_FILLED
+		soundloop 		"music_mainmenu"
+		onOpen
+		{
+      execnow "downloadingleaderboard";
+			setfocus leaderboardlist;
+		}
+		onEsc
+		{
+			close self;
+		}
+
+		#include "ui/bg.inc"
+		#include "ui/bars.menu"
+	
+		// -------------------- TREE TITLE -------------------
+		itemDef
+		{
+			type			ITEM_TYPE_TEXT
+			origin			ORIGIN_MENU_TREE
+			forecolor		TREE_COLOR
+			text			"LEADERBOARDS"
+			textfont		UI_FONT_NORMAL
+			textscale		TEXTSIZE_DEFAULT
+			visible 		1
+			decoration
+		}
+		itemDef
+		{
+			type			ITEM_TYPE_TEXT
+			origin			ORIGIN_MENU_TITLE
+			forecolor		COLOR_TITLE
+			dvar local_leaderboards_mapname_localized
+			textfont		UI_FONT_NORMAL
+			textscale		TEXTSIZE_DEFAULT
+			visible 		1
+			decoration
+		}
+
+		// --------------------------- buttons ----------------------------
+		itemDef 
+		{
+      		text		"Next map"
+					type		ITEM_TYPE_BUTTON
+      		textscale	0.25
+					textstyle	ITEM_TEXTSTYLE_SHADOWED
+					style		WINDOW_STYLE_FILLED
+      		rect		450 5 130 15
+					textalign	ITEM_ALIGN_RIGHT
+      		textalignx	-5
+      		textaligny	11
+      		forecolor	.9 .9 .95 1
+      		visible		1
+					mouseEnter { play "mouse_over"; }
+					action { play "mouse_click" ; execnow "cycleleaderboardmap"; execnow "downloadingleaderboard"; }
+    	}
+
+		itemDef 
+		{
+			name		back
+			text		"@MENU_BACK"
+			type		ITEM_TYPE_BUTTON
+			style		WINDOW_STYLE_FILLED
+			textstyle	ITEM_TEXTSTYLE_SHADOWED
+			rect		30 429 90 14
+			textalign	ITEM_ALIGN_CENTER
+			textscale	0.4
+			textaligny	11
+
+			visible		1
+			forecolor	.9 .9 .95 1
+			mouseEnter { play "mouse_over" }
+
+			action 
+			{
+				play "mouse_click";
+				close self;
+				open main
+			}
+			mouseEnter		{  play "mouse_over"; }
+		}
+		itemDef
+		{
+			style			WINDOW_STYLE_SHADER
+			rect			34 421 20 20
+			background		"ui_arrow_left"
+			forecolor		1 1 1 1
+			visible			1
+			decoration
+		}
+
+		itemDef
+		{
+			name leaderboardlist
+			rect 9 80 620 332
+			type ITEM_TYPE_LISTBOX
+			style WINDOW_STYLE_FILLED
+			elementwidth 120
+			elementheight 15
+			textfont	UI_FONT_NORMAL
+			textalign ITEM_ALIGN_CENTER
+			textalignx 1
+			textaligny -1
+			textscale 0.25
+			elementtype LISTBOX_TEXT
+			feeder 0x41
+			forecolor 1 1 1 1
+			focusColor	1 1 1 1
+			disableColor 1 1 1 1
+			backcolor 0 0 0 0
+			outlinecolor .19 .3 .2 .45
+			visible 1
+			//	numcols		xpos	xwidth	textlen
+			columns	7			2		  30		20
+										32		240		22
+										272		40		22
+										312 	20		25
+										332		70		10
+										402		80		10
+										482		120		14
+
+			visible			1
+			doubleClick
+			{
+				play "mouse_click";
+				exec "AcceptInputFromActiveControl";
+				uiScript LeaderboardSelected
+			}
+		}
+
+		itemDef
+		{
+			name rankColumn
+			group grpColumn
+			rect 10 80 31 335
+			style WINDOW_STYLE_FILLED
+			border 1
+			backcolor 0 0 0 0
+			bordercolor .5 .5 .5 .5
+			visible 1
+			decoration
+		}
+
+		itemDef
+		{
+			name rank
+			group grpTabs
+			text "Rank"
+			type ITEM_TYPE_BUTTON
+			textscale 0.25
+			textfont	UI_FONT_NORMAL
+			style WINDOW_STYLE_FILLED
+			border 1
+			bordercolor .1 .1 .1 .25
+			rect 10 65 30 15
+			textalign ITEM_ALIGN_LEFT
+			textalignx 2		// center
+			textaligny 10
+			forecolor 1 1 1 1
+			backcolor OPTIONS_HEADING_JOIN_COLOR
+			visible 1
+			action
+			{
+				play "mouse_click" ;
+				setitemcolor grpTabs backcolor .3 .5 .2 .3 ;
+				setitemcolor rank backcolor .1 .2 .37 1 ;
+				setitemcolor grpColumn backcolor 0 0 0 0 ;
+				setitemcolor rankColumn backcolor 0 0 0.4 .15
+			}
+			mouseEnter { setitemcolor rankColumn bordercolor 1 1 1 1 ; play "mouse_over" }
+			mouseExit { setitemcolor rankColumn bordercolor .5 .5 .5 .5 }
+		}
+
+		itemDef
+		{
+			name playerColumn
+			group grpColumn
+			rect 40 80 239 335
+			style WINDOW_STYLE_FILLED
+			border 1
+			backcolor 0 0 0 0
+			bordercolor .5 .5 .5 .5
+			visible 1
+			decoration
+		}
+
+		itemDef
+		{
+			name player
+			group grpTabs
+			text "Player name"
+			type ITEM_TYPE_BUTTON
+			textscale 0.25
+			textfont	UI_FONT_NORMAL
+			style WINDOW_STYLE_FILLED
+			border 1
+			bordercolor .1 .1 .1 .25
+			rect 40 65 239 15
+			textalign ITEM_ALIGN_LEFT
+			textalignx 2		// center
+			textaligny 10
+			forecolor 1 1 1 1
+			backcolor OPTIONS_HEADING_JOIN_COLOR
+			visible 1
+			action
+			{
+				play "mouse_click" ;
+				setitemcolor grpTabs backcolor .3 .5 .2 .3 ;
+				setitemcolor player backcolor .1 .2 .37 1 ;
+				setitemcolor grpColumn backcolor 0 0 0 0 ;
+				setitemcolor playerColumn backcolor 0 0 0.4 .15
+			}
+			mouseEnter { setitemcolor playerColumn bordercolor 1 1 1 1 ; play "mouse_over" }
+			mouseExit { setitemcolor playerColumn bordercolor .5 .5 .5 .5 }
+		}
+
+		itemDef
+		{
+			name roundColumn
+			group grpColumn
+			rect 280 80 39 335
+			style WINDOW_STYLE_FILLED
+			border 1
+			backcolor 0 0 0 0
+			bordercolor .5 .5 .5 .5
+			visible 1
+			decoration
+		}
+
+		itemDef
+		{
+			name round
+			group grpTabs
+			text "Round"
+			type ITEM_TYPE_BUTTON
+			textscale 0.25
+			textfont	UI_FONT_NORMAL
+			style WINDOW_STYLE_FILLED
+			border 1
+			bordercolor .1 .1 .1 .25
+			rect 280 65 39 15
+			textalign ITEM_ALIGN_LEFT
+			textalignx 2		// center
+			textaligny 10
+			forecolor 1 1 1 1
+			backcolor OPTIONS_HEADING_JOIN_COLOR
+			visible 1
+			action
+			{
+				play "mouse_click" ;
+				setitemcolor grpTabs backcolor .3 .5 .2 .3 ;
+				setitemcolor round backcolor .1 .2 .37 1 ;
+				setitemcolor grpColumn backcolor 0 0 0 0 ;
+				setitemcolor roundColumn backcolor 0 0 0.4 .15
+			}
+			mouseEnter { setitemcolor roundColumn bordercolor 1 1 1 1 ; play "mouse_over" }
+			mouseExit { setitemcolor roundColumn bordercolor .5 .5 .5 .5 }
+		}
+
+		itemDef
+		{
+			name clientsColumn
+			group grpColumn
+			rect 320 80 19 335
+			style WINDOW_STYLE_FILLED
+			border 1
+			backcolor 0 0 0 0
+			bordersize 1
+			bordercolor .5 .5 .5 .5
+			visible 1
+			decoration
+		}
+
+		itemDef
+		{
+			name clients
+			group grpTabs
+			text "#"
+			type ITEM_TYPE_BUTTON
+			textscale 0.25
+			textfont	UI_FONT_NORMAL
+			style WINDOW_STYLE_FILLED
+			border 1
+			bordercolor .1 .1 .1 .25
+			rect 320 65 19 15
+			textalign ITEM_ALIGN_LEFT
+			textalignx 2		// center
+			textaligny 10
+			forecolor 1 1 1 1
+			backcolor OPTIONS_HEADING_JOIN_COLOR
+			visible 1
+			action
+			{
+				play "mouse_click" ;
+				setitemcolor grpTabs backcolor .3 .5 .2 .3 ;
+				setitemcolor clients backcolor .1 .2 .37 1 ;
+				setitemcolor grpColumn backcolor 0 0 0 0 ;
+				setitemcolor clientsColumn backcolor 0 0 0.4 .15
+			}
+			mouseEnter { setitemcolor clientsColumn bordercolor 1 1 1 1 ; play "mouse_over" }
+			mouseExit { setitemcolor clientsColumn bordercolor .5 .5 .5 .5 }
+		}
+
+		itemDef
+		{
+			name timeColumn
+			group grpColumn
+			rect 340 80 69 335
+			style WINDOW_STYLE_FILLED
+			border 1
+			backcolor 0 0 0 0
+			bordersize 1
+			bordercolor .5 .5 .5 .5
+			visible 1
+			decoration
+		}
+
+		itemDef
+		{
+			name time
+			group grpTabs
+			text "Round time"
+			type ITEM_TYPE_BUTTON
+			textscale 0.25
+			textfont	UI_FONT_NORMAL
+			style WINDOW_STYLE_FILLED
+			border 1
+			bordercolor .1 .1 .1 .25
+			rect 340 65 69 15
+			textalign ITEM_ALIGN_LEFT
+			textalignx 2		// center
+			textaligny 10
+			forecolor 1 1 1 1
+			backcolor OPTIONS_HEADING_JOIN_COLOR
+			visible 1
+			action
+			{
+				play "mouse_click" ;
+				setitemcolor grpTabs backcolor .3 .5 .2 .3 ;
+				setitemcolor time backcolor .1 .2 .37 1 ;
+				setitemcolor grpColumn backcolor 0 0 0 0 ;
+				setitemcolor timeColumn backcolor 0 0 0.4 .15
+			}
+			mouseEnter { setitemcolor timeColumn bordercolor 1 1 1 1 ; play "mouse_over" }
+			mouseExit { setitemcolor timeColumn bordercolor .5 .5 .5 .5 }
+		}
+
+		itemDef
+		{
+			name scoreColumn
+			group grpColumn
+			rect 410 80 79 335
+			style WINDOW_STYLE_FILLED
+			border 1
+			backcolor 0 0 0 0
+			bordersize 1
+			bordercolor .5 .5 .5 .5
+			visible 1
+			decoration
+		}
+
+		itemDef
+		{
+			name score
+			group grpTabs
+			text "Score"
+			type ITEM_TYPE_BUTTON
+			textscale 0.25
+			textfont	UI_FONT_NORMAL
+			style WINDOW_STYLE_FILLED
+			border 1
+			bordercolor .1 .1 .1 .25
+			rect 410 65 79 15
+			textalign ITEM_ALIGN_LEFT
+			textalignx 2		// center
+			textaligny 10
+			forecolor 1 1 1 1
+			backcolor OPTIONS_HEADING_JOIN_COLOR
+			visible 1
+			action
+			{
+				play "mouse_click" ;
+				setitemcolor grpTabs backcolor .3 .5 .2 .3 ;
+				setitemcolor score backcolor .1 .2 .37 1 ;
+				setitemcolor grpColumn backcolor 0 0 0 0 ;
+				setitemcolor scoreColumn backcolor 0 0 0.4 .15
+			}
+			mouseEnter { setitemcolor scoreColumn bordercolor 1 1 1 1 ; play "mouse_over" }
+			mouseExit { setitemcolor scoreColumn bordercolor .5 .5 .5 .5 }
+		}
+
+		itemDef
+		{
+			name killsColumn
+			group grpColumn
+			rect 490 80 122 335
+			style WINDOW_STYLE_FILLED
+			border 1
+			backcolor 0 0 0 0
+			bordersize 1
+			bordercolor .5 .5 .5 .5
+			visible 1
+			decoration
+		}
+
+		itemDef
+		{
+			name kills
+			group grpTabs
+			text "Kills"
+			type ITEM_TYPE_BUTTON
+			textscale 0.25
+			textfont	UI_FONT_NORMAL
+			style WINDOW_STYLE_FILLED
+			border 1
+			bordercolor .1 .1 .1 .25
+			rect 490 65 122 15
+			textalign ITEM_ALIGN_LEFT
+			textalignx 2		// center
+			textaligny 10
+			forecolor 1 1 1 1
+			backcolor OPTIONS_HEADING_JOIN_COLOR
+			visible 1
+			action
+			{
+				play "mouse_click" ;
+				setitemcolor grpTabs backcolor .3 .5 .2 .3 ;
+				setitemcolor kills backcolor .1 .2 .37 1 ;
+				setitemcolor grpColumn backcolor 0 0 0 0 ;
+				setitemcolor killsColumn backcolor 0 0 0.4 .15
+			}
+			mouseEnter { setitemcolor killsColumn bordercolor 1 1 1 1 ; play "mouse_over" }
+			mouseExit { setitemcolor killsColumn bordercolor .5 .5 .5 .5 }
+		}
+
+		#include "ui/safearea.menu"
+	}
+}

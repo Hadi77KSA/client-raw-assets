@@ -468,13 +468,14 @@
 
 			CHOICE_SEPARATOR_VIS( CHOICE_SEP_2, when( !localvarBool( ui_hideBack ) ); )
 			CHOICE_BUTTON_VIS( 5, "@MENU_MODS", open mods_menu;, when( !localvarBool( ui_hideBack ) ) )
+			CHOICE_BUTTON_VIS( 6, "LEADERBOARDS", open menu_lan;, when( !localvarBool( ui_hideBack ) ) )
 						
-			CHOICE_BUTTON_BG( 6, 1 )
-			CHOICE_HIGHLIGHT( 6, 1 )
-			CHOICE_BUTTON_VIS_NOHI( 6, "@MENU_CREDITS", SETUP_ACTION_CREDITS, when( !localvarBool( ui_hideBack ) && dvarInt( mis_01 ) < dvarInt( mis_01_unlock ) ); )
-			CHOICE_BUTTON_VIS_NOHI( 6, "@MENU_CREDITS", SETUP_ACTION_CREDITS, when( !localvarBool( ui_hideBack ) && dvarInt( mis_01 ) >= dvarInt( mis_01_unlock ) ); )
+			CHOICE_BUTTON_BG( 7, 1 )
+			CHOICE_HIGHLIGHT( 7, 1 )
+			CHOICE_BUTTON_VIS_NOHI( 7, "@MENU_CREDITS", SETUP_ACTION_CREDITS, when( !localvarBool( ui_hideBack ) && dvarInt( mis_01 ) < dvarInt( mis_01_unlock ) ); )
+			CHOICE_BUTTON_VIS_NOHI( 7, "@MENU_CREDITS", SETUP_ACTION_CREDITS, when( !localvarBool( ui_hideBack ) && dvarInt( mis_01 ) >= dvarInt( mis_01_unlock ) ); )
 			//CHOICE_BUTTON_VIS( 10, "@MENU_MULTIPLAYER", open multi_popmenu, when( !localvarBool( ui_hideBack ) ); )
-			CHOICE_BUTTON_VIS( 7, "@MENU_QUIT", open quit_popmenu, when( !localvarBool( ui_hideBack ) ); )
+			CHOICE_BUTTON_VIS( 8, "@MENU_QUIT", open quit_popmenu, when( !localvarBool( ui_hideBack ) ); )
 			
 #endif // #ifdef PC
 
