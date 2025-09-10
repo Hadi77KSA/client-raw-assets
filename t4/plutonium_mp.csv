@@ -7,4 +7,16 @@ rawfile,rumble/damage_light_l.rmb
 rawfile,rumble/grenade_rumble
 rawfile,rumble/grenade_rumble_h.rmb
 rawfile,rumble/grenade_rumble_l.rmb
+rawfile,rumble/tank_rumble_mp
+rawfile,rumble/tank_rumble_h.rmb
+rawfile,rumble/tank_rumble_l.rmb
+rawfile,rumble/tank_damage_heavy_mp
+rawfile,rumble/tank_damage_heavy_h.rmb
+rawfile,rumble/tank_damage_heavy_l.rmb
+rawfile,rumble/tank_damage_light_mp
+rawfile,rumble/tank_damage_light_h.rmb
+rawfile,rumble/tank_damage_light_l.rmb
+rawfile,rumble/tank_damaged_rumble_mp
+rawfile,rumble/tank_damaged_rumble_h.rmb
+rawfile,rumble/tank_damaged_rumble_l.rmb
 menufile,ui_mp/scriptmenus/plutonium_class.menu
