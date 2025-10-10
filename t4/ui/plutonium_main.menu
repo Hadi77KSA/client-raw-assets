@@ -48,7 +48,7 @@
 #ifdef PC
 	#undef CHOICE_SEP_1
 	#define CHOICE_SEP_1			2
-	#define CHOICE_SEP_2			6
+	#define CHOICE_SEP_2			8
 #endif
 #ifdef CONSOLE
 	#define CHOICE_SEP_1			3
@@ -462,20 +462,22 @@
 			//CHOICE_BUTTON_VIS( 4, "@MENU_SELECT_ONLINE_PROFILE", execOnDvarIntValue dw_loggedin 0 "dwconnect"; setdvar ui_playerProfileAlreadyChosen 0; open player_profile, when( !localvarBool( ui_hideBack ) ); )
 			//CHOICE_BUTTON_VIS( 5, "@MENU_ARCADEMODE", open popmenu_arcade; LOCAL_ZOMBIE_RESET, when( dvarInt( mis_01 ) >= 20 && !localvarBool( ui_hideBack ) ); )
 			//CHOICE_DBUTTON_VIS( 5, "@MENU_ARCADEMODE", when( dvarInt( mis_01 ) < 20 && !localvarBool( ui_hideBack ) ); )	
-			CHOICE_BUTTON_VIS( 3, "@MENU_FRIENDS_CAP", uiScript plutoniumFriends;, when( !localvarBool( ui_hideBack ) ); )
-			//CHOICE_NEWICON_VIS( 5, "specialty_new", when( hasinvites() || haspendingfriends() ); )
-			CHOICE_BUTTON_VIS( 4, "@MENU_OPTIONS_CONTROLS_CAP", open options_new_pc;, when( !localvarBool( ui_hideBack ) ); )
+			CHOICE_BUTTON_VIS( 3, "PLUTONIUM FRIENDS", uiScript plutoniumFriends;, when( !localvarBool( ui_hideBack ) ); )
+			CHOICE_BUTTON_VIS( 4, "@MENU_SELECT_ONLINE_PROFILE", execOnDvarIntValue dw_loggedin 0 "dwconnect"; setdvar ui_playerProfileAlreadyChosen 0; open player_profile, when( !localvarBool( ui_hideBack ) ); )
+			CHOICE_BUTTON_VIS( 5, "@MENU_FRIENDS_CAP", open menu_pc_friends;, when( !localvarBool( ui_hideBack ) ); )
+			CHOICE_NEWICON_VIS( 5, "specialty_new", when( hasinvites() || haspendingfriends() ); )
+			CHOICE_BUTTON_VIS( 6, "@MENU_OPTIONS_CONTROLS_CAP", open options_new_pc;, when( !localvarBool( ui_hideBack ) ); )
 
 			CHOICE_SEPARATOR_VIS( CHOICE_SEP_2, when( !localvarBool( ui_hideBack ) ); )
-			CHOICE_BUTTON_VIS( 5, "@MENU_MODS", open mods_menu;, when( !localvarBool( ui_hideBack ) ) )
-			CHOICE_BUTTON_VIS( 6, "LEADERBOARDS", open menu_lan;, when( !localvarBool( ui_hideBack ) ) )
+			CHOICE_BUTTON_VIS( 7, "@MENU_MODS", open mods_menu;, when( !localvarBool( ui_hideBack ) ) )
+			CHOICE_BUTTON_VIS( 8, "LEADERBOARDS", open menu_lan;, when( !localvarBool( ui_hideBack ) ) )
 						
-			CHOICE_BUTTON_BG( 7, 1 )
-			CHOICE_HIGHLIGHT( 7, 1 )
-			CHOICE_BUTTON_VIS_NOHI( 7, "@MENU_CREDITS", SETUP_ACTION_CREDITS, when( !localvarBool( ui_hideBack ) && dvarInt( mis_01 ) < dvarInt( mis_01_unlock ) ); )
-			CHOICE_BUTTON_VIS_NOHI( 7, "@MENU_CREDITS", SETUP_ACTION_CREDITS, when( !localvarBool( ui_hideBack ) && dvarInt( mis_01 ) >= dvarInt( mis_01_unlock ) ); )
+			CHOICE_BUTTON_BG( 9, 1 )
+			CHOICE_HIGHLIGHT( 9, 1 )
+			CHOICE_BUTTON_VIS_NOHI( 9, "@MENU_CREDITS", SETUP_ACTION_CREDITS, when( !localvarBool( ui_hideBack ) && dvarInt( mis_01 ) < dvarInt( mis_01_unlock ) ); )
+			CHOICE_BUTTON_VIS_NOHI( 9, "@MENU_CREDITS", SETUP_ACTION_CREDITS, when( !localvarBool( ui_hideBack ) && dvarInt( mis_01 ) >= dvarInt( mis_01_unlock ) ); )
 			//CHOICE_BUTTON_VIS( 10, "@MENU_MULTIPLAYER", open multi_popmenu, when( !localvarBool( ui_hideBack ) ); )
-			CHOICE_BUTTON_VIS( 8, "@MENU_QUIT", open quit_popmenu, when( !localvarBool( ui_hideBack ) ); )
+			CHOICE_BUTTON_VIS( 10, "@MENU_QUIT", open quit_popmenu, when( !localvarBool( ui_hideBack ) ); )
 			
 #endif // #ifdef PC
 
@@ -890,21 +892,21 @@
 			CHOICE_HIGHLIGHT( 2, 1 )
 			CHOICE_BUTTON_FOCUS_VIS_NOHI_EX( 2, "@MENU_FIND_GAME", SETUP_ACTION_GAMEBROWSER, CLEARUIHINT;, ;, when( !localVarBool( ui_hideBack ) ), name gamebrowser )
 
-			//CHOICE_BUTTON_FOCUS_VIS( 2, "@MENU_HOST_ONLINE_CAP", SETUP_ACTION_HOSTONLINE, exec "set ui_hint_text @MPUI_DESC_HOST_ONLINE", CLEARUIHINT, when( !localVarBool( ui_hideBack ) && dvarBool( dw_loggedin ) ) )
-			//CHOICE_BUTTON_FOCUS_VIS_NOHI( 2, "", ;, exec "set ui_hint_text @MPUI_DESC_HOST_ONLINE_LOCKED", CLEARUIHINT, when( !localVarBool( ui_hideBack ) && !dvarBool( dw_loggedin ) ) )
-			//CHOICE_DBUTTON_VIS( 2, "@MENU_HOST_ONLINE_CAP", when( !localVarBool( ui_hideBack ) && !dvarBool( dw_loggedin ) ) )
-
-			CHOICE_BUTTON_BG( 3, when( !localVarBool( ui_hideBack ) ) )
-			CHOICE_HIGHLIGHT( 3, 1 )
-			CHOICE_BUTTON_FOCUS_VIS_NOHI_EX( 3, "@MENU_HOST_LAN_CAP", SETUP_ACTION_HOSTLAN, CLEARUIHINT;, ;, when( !localVarBool( ui_hideBack ) ), name hostlan )
+			CHOICE_BUTTON_FOCUS_VIS( 3, "@MENU_HOST_ONLINE_CAP", SETUP_ACTION_HOSTONLINE, exec "set ui_hint_text @MPUI_DESC_HOST_ONLINE", CLEARUIHINT, when( !localVarBool( ui_hideBack ) && dvarBool( dw_loggedin ) ) )
+			CHOICE_BUTTON_FOCUS_VIS_NOHI( 3, "", ;, exec "set ui_hint_text @MPUI_DESC_HOST_ONLINE_LOCKED", CLEARUIHINT, when( !localVarBool( ui_hideBack ) && !dvarBool( dw_loggedin ) ) )
+			CHOICE_DBUTTON_VIS( 3, "@MENU_HOST_ONLINE_CAP", when( !localVarBool( ui_hideBack ) && !dvarBool( dw_loggedin ) ) )
 
 			CHOICE_BUTTON_BG( 4, when( !localVarBool( ui_hideBack ) ) )
 			CHOICE_HIGHLIGHT( 4, 1 )
-			CHOICE_BUTTON_FOCUS_VIS_NOHI_EX( 4, "@MENU_RANK_AND_CHALLENGES_CAP", SETUP_ACTION_CHALLENGES, CLEARUIHINT;, ;, when( !localVarBool( ui_hideBack ) ), name challenges )					
-			
+			CHOICE_BUTTON_FOCUS_VIS_NOHI_EX( 4, "@MENU_HOST_LAN_CAP", SETUP_ACTION_HOSTLAN, CLEARUIHINT;, ;, when( !localVarBool( ui_hideBack ) ), name hostlan )
+
 			CHOICE_BUTTON_BG( 5, when( !localVarBool( ui_hideBack ) ) )
 			CHOICE_HIGHLIGHT( 5, 1 )
-			CHOICE_BUTTON_FOCUS_VIS_NOHI_EX( 5, "@MENU_DEATHCARDS", SETUP_ACTION_COLLECTIBLES, CLEARUIHINT;, ;, when( !localVarBool( ui_hideBack ) ), name deathcards )					
+			CHOICE_BUTTON_FOCUS_VIS_NOHI_EX( 5, "@MENU_RANK_AND_CHALLENGES_CAP", SETUP_ACTION_CHALLENGES, CLEARUIHINT;, ;, when( !localVarBool( ui_hideBack ) ), name challenges )					
+			
+			CHOICE_BUTTON_BG( 6, when( !localVarBool( ui_hideBack ) ) )
+			CHOICE_HIGHLIGHT( 6, 1 )
+			CHOICE_BUTTON_FOCUS_VIS_NOHI_EX( 6, "@MENU_DEATHCARDS", SETUP_ACTION_COLLECTIBLES, CLEARUIHINT;, ;, when( !localVarBool( ui_hideBack ) ), name deathcards )					
 
 			//CHOICE_FOOTNOTE_VIS( "@MENU_GAME_EXPERIENCE_MAY_CHANGE", 40, 430, when( !localvarBool( ui_hideBack ) && !localvarBool( ui_inOverlay ) ) )
 		#endif // #ifdef PC
