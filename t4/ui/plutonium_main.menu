@@ -747,6 +747,7 @@
 			exec "xblive_rankedmatch 0"; \
 			exec "party_timerVisible 0"; \
 			exec "xstartprivateparty"; \
+			exec "com_oldProtocol 1"; \
 			setdvar ui_mptype "0"; \
 			SET_ARCADE_MODE \
 			SET_DEFAULT_MAP_AND_MODE \
