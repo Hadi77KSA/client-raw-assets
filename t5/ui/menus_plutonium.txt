@@ -1,8 +1,6 @@
-// plutonium menu defs
-{	
+// new plutonium menu defs
+{
+	loadMenu { "ui/mods.menu" }
 	loadMenu { "ui/serverbrowser.menu" }
-	loadMenu { "ui/xboxlive.menu" }
-	loadMenu { "ui/main.menu" }
-	loadMenu { "ui_mp/code_mp_popups.menu" }
-	loadMenu { "ui_mp/mods.menu" }
+	loadMenu { "ui_mp/serverinfo.menu" }
 }

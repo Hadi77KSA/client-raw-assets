@@ -240,7 +240,7 @@
 				}
 
 		#define SETUP_ACTION_SERVERBROWSER													\
-				execNow "serverlist";
+				execNow "serverlist"; // execNow "openmenu server_browser_ranked";
 
 		#define SETUP_ACTION_PRIVATEMATCH				\
 				/*exec "party_autojoinfriend 0";*/			\

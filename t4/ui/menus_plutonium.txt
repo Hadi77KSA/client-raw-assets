@@ -1,0 +1,4 @@
+// new plutonium menu defs
+{
+	loadMenu { "ui/leaderboard.menu" }
+}

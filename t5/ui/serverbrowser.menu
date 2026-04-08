@@ -2,7 +2,7 @@
 #include "ui_mp/common_macro.inc"
 #include "ui/framestyle.inc"
 #include "ui_mp/newframe.inc"
-#include "ui/serverbrowser.inc";
+#include "ui_mp/serverbrowser.inc";
 #include "ui_mp/menustyle.inc"
 #include "ui/choices_setup_common.menu"
 #include "ui_mp/item_animate.inc"
@@ -537,4 +537,3 @@ menuDef
 		SYSTEM_POPUP_SUBTITLE_VIS( locString( "@PATCH_PLAYLISTISNEW" ), 1 )
 		FRAME_CHOICE_BUTTON_VIS_EX( 1, "@MENU_OK", WAGER_ONESC, 1, ; )
 }
-

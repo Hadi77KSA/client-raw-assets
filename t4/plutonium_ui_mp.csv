@@ -1,5 +1,7 @@
-menufile,ui_mp/plutonium_main.menu
-menufile,ui_mp/plutonium_createserver.menu
-menufile,ui/plutonium_options_game_pc.menu
-menufile,ui/plutonium_options_graphics_pc.menu
-menufile,ui_mp/plutonium_options_multi.menu
+menufile,ui_mp/menus_plutonium.txt
+
+menufile,ui_mp/main_.menu
+menufile,ui_mp/createserver_.menu
+menufile,ui/options_game_pc_.menu
+menufile,ui/options_graphics_pc_.menu
+menufile,ui_mp/options_multi_.menu

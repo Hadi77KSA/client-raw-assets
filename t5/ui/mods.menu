@@ -52,6 +52,7 @@
 
 menuDef
 {
+	blurWorld				4.8
 	name					select_mod
 	rect					0 0 640 480 HORIZONTAL_ALIGN_FULLSCREEN VERTICAL_ALIGN_FULLSCREEN
 	focuscolor				COLOR_FOCUSED
@@ -80,7 +81,7 @@ menuDef
 		ON_ESC
 	}
 
-	FRAME_DEFAULT
+	FRAME_SP_DEFAULT
 
 	FRAME_TITLE_DEFAULT( "@MENU_MODS_CAPS", 1 )
 	FRAME_SUBTITLE_DEFAULT( "^3" + (locString( "@MENU_MODS_LOADED_CAPS" ) + dvarString( fs_game ) ) + "^7", when(dvarString( fs_game ) != "") )

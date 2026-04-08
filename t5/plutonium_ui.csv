@@ -1,1 +1,11 @@
 menufile,ui/menus_plutonium.txt
+
+menufile,ui/xboxlive.menu
+menufile,ui/main.menu
+menufile,ui/levels.menu
+menufile,ui/settings.menu
+
+stringtable,maps/mapstable.csv
+rawfile,coopmaps.arena
+
+material,playlist_custom

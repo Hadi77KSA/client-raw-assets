@@ -1,5 +1,6 @@
-menufile,ui_mp/plutonium_options_multi.menu
-menufile,ui/plutonium_main.menu
-menufile,ui/plutonium_leaderboard.menu
-menufile,ui/plutonium_options_game_pc.menu
-menufile,ui/plutonium_options_graphics_pc.menu
+menufile,ui/menus_plutonium.txt
+
+menufile,ui_mp/options_multi_.menu
+menufile,ui/main_.menu
+menufile,ui/options_game_pc_.menu
+menufile,ui/options_graphics_pc_.menu

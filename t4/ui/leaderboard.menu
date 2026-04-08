@@ -14,7 +14,7 @@
 {
 	menuDef
 	{
-		name			menu_lan
+		name			leaderboards
 		fullscreen		1
 		rect			0 0 640 480
 		focusColor		COLOR_FOCUSED
@@ -39,7 +39,7 @@
 			type			ITEM_TYPE_TEXT
 			origin			ORIGIN_MENU_TREE
 			forecolor		TREE_COLOR
-			text			"LEADERBOARDS"
+			text			"LEADERBOARDS" // todo localize
 			textfont		UI_FONT_NORMAL
 			textscale		TEXTSIZE_DEFAULT
 			visible 		1
@@ -60,7 +60,7 @@
 		// --------------------------- buttons ----------------------------
 		itemDef 
 		{
-      		text		"Next map"
+      		text		"Next map" // todo localize
 					type		ITEM_TYPE_BUTTON
       		textscale	0.25
 					textstyle	ITEM_TEXTSTYLE_SHADOWED
@@ -165,7 +165,7 @@
 		{
 			name rank
 			group grpTabs
-			text "Rank"
+			text "Rank" // todo localize
 			type ITEM_TYPE_BUTTON
 			textscale 0.25
 			textfont	UI_FONT_NORMAL
@@ -208,7 +208,7 @@
 		{
 			name player
 			group grpTabs
-			text "Player name"
+			text "Player name" // todo localize
 			type ITEM_TYPE_BUTTON
 			textscale 0.25
 			textfont	UI_FONT_NORMAL
@@ -251,7 +251,7 @@
 		{
 			name round
 			group grpTabs
-			text "Round"
+			text "Round" // todo localize
 			type ITEM_TYPE_BUTTON
 			textscale 0.25
 			textfont	UI_FONT_NORMAL
@@ -339,7 +339,7 @@
 		{
 			name time
 			group grpTabs
-			text "Round time"
+			text "Round time" // todo localize
 			type ITEM_TYPE_BUTTON
 			textscale 0.25
 			textfont	UI_FONT_NORMAL
@@ -383,7 +383,7 @@
 		{
 			name score
 			group grpTabs
-			text "Score"
+			text "Score" // todo localize
 			type ITEM_TYPE_BUTTON
 			textscale 0.25
 			textfont	UI_FONT_NORMAL
@@ -427,7 +427,7 @@
 		{
 			name kills
 			group grpTabs
-			text "Kills"
+			text "Kills" // todo localize
 			type ITEM_TYPE_BUTTON
 			textscale 0.25
 			textfont	UI_FONT_NORMAL
