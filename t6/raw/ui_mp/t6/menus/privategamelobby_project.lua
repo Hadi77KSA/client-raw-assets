@@ -118,7 +118,7 @@ CoD.PrivateGameLobby.Dvars[1].values[8] = 8
 CoD.PrivateGameLobby.Dvars[2] = {}
 CoD.PrivateGameLobby.Dvars[2].id = "sv_allowAimAssist"
 CoD.PrivateGameLobby.DvarDefaults["sv_allowAimAssist"] = 1
-CoD.PrivateGameLobby.Dvars[2].name = Engine.Localize("MENU_TARGET_ASSIST_CAPS")
+CoD.PrivateGameLobby.Dvars[2].name = "MENU_TARGET_ASSIST_CAPS"
 CoD.PrivateGameLobby.Dvars[2].hintText = "Allow aim assist option for all controller players." -- todo localize
 CoD.PrivateGameLobby.Dvars[2].labels = {}
 CoD.PrivateGameLobby.Dvars[2].labels[1] = "MENU_DISABLED_CAPS"
@@ -370,7 +370,7 @@ local AddGameOptionsButtons = function (PrivateGameLobbyButtonPane, GameOptions,
 				GametypeIsValid = false
 			end
 		end
-		if CoD.isZombie and GameOptionsType == "dvar" and GameOptions[GameOptionsIndex].id == "zombies_minplayers" and not Dvar.com_useRawUDP:get() then
+		if CoD.isZombie == true and GameOptionsType == "dvar" and GameOptions[GameOptionsIndex].id == "zombies_minplayers" and Dvar.com_useRawUDP:get() == false then
 			GametypeIsValid = false
 		end
 		if GametypeIsValid then

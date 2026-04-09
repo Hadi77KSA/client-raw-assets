@@ -4,6 +4,7 @@ menufile,ui/xboxlive.menu
 menufile,ui/main.menu
 menufile,ui/levels.menu
 menufile,ui/settings.menu
+menufile,ui/xboxlive_privatelobby.menu
 
 stringtable,maps/mapstable.csv
 rawfile,coopmaps.arena
