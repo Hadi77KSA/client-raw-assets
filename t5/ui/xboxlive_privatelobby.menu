@@ -319,11 +319,11 @@
 										CLEARUIHINT,
 										IS_LOBBY_HOST )
 										
-		FRAME_CHOICE_DVARFLOATLIST_FOCUS_VIS(	3, "MIN PLAYERS", // todo localize
+		FRAME_CHOICE_DVARFLOATLIST_FOCUS_VIS(	3, "@PLUTONIUM_MENU_MINPLAYERS_CAPS",
 												sp_minplayers,
 												{ "1" 1 "2" 2 "3" 3 "4" 4 },
 												;,
-												exec set ui_hint_text "Min players to start the match with"; exec set ui_show_arrow 1;, // todo localize
+												exec set ui_hint_text "@PLUTONIUM_MENU_MINPLAYERS_HINT"; exec set ui_show_arrow 1;,
 												CLEARUIHINT, IS_LOBBY_HOST && dvarBool( com_useRawUDP ) )
 
 

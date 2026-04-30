@@ -20,17 +20,17 @@ LUI.createMenu.ServerBrowserServerInfo = function ( owner )
 	self:addTitle( Engine.Localize( "MENU_SERVER_INFORMATION" ) )
 
 	if CoD.ServerList.SelectedServer == nil then
-		self.buttonList:addText("No server selected") -- todo localize
+		self.buttonList:addText( Engine.Localize("SERVERBROWSER_NO_SERVER_SELECTED") )
 	else
-		self.connectButton = self.buttonList:addDvarLeftRightSelector( owner, "CONNECT TO SERVER", "", "Connect to the server." ) -- todo localize
+		self.connectButton = self.buttonList:addDvarLeftRightSelector( owner, Engine.Localize("SERVERBROWSER_CONNECT_TO_SERVER_CAPS"), "", Engine.Localize("SERVERBROWSER_CONNECT_TO_SERVER_HINT") )
 		self.connectButton:registerEventHandler( "button_action", CoD.ServerBrowserServerInfo.Connect )
 
-		self.buttonList:addText("HOSTNAME: " .. CoD.ServerList.SelectedServer.hostname) -- todo localize
-		self.buttonList:addText("MAX PLAYERS: " .. CoD.ServerList.SelectedServer.maxplayers) -- todo localize
-		self.buttonList:addText("MAP NAME: " .. CoD.ServerList.SelectedServer.displayable_map) -- todo localize
-		self.buttonList:addText("GAMETYPE: " .. CoD.ServerList.SelectedServer.displayable_gametype) -- todo localize
-		self.buttonList:addText("PING: " .. CoD.ServerList.SelectedServer.ping) -- todo localize
-		self.buttonList:addText("PLAYERS: " .. #CoD.ServerList.SelectedServer.players) -- todo localize
+		self.buttonList:addText(Engine.Localize("SERVERBROWSER_HOSTNAME", CoD.ServerList.SelectedServer.hostname))
+		self.buttonList:addText(Engine.Localize("SERVERBROWSER_MAX_PLAYERS", CoD.ServerList.SelectedServer.maxplayers))
+		self.buttonList:addText(Engine.Localize("SERVERBROWSER_MAP_NAME", CoD.ServerList.SelectedServer.displayable_map))
+		self.buttonList:addText(Engine.Localize("SERVERBROWSER_GAMETYPE", CoD.ServerList.SelectedServer.displayable_gametype))
+		self.buttonList:addText(Engine.Localize("SERVERBROWSER_PING", CoD.ServerList.SelectedServer.ping))
+		self.buttonList:addText(Engine.Localize("SERVERBROWSER_PLAYERS", #CoD.ServerList.SelectedServer.players))
 	end
 
 	if not self.buttonList:restoreState() then

@@ -166,8 +166,8 @@ CoD.TheaterLobby.ShowButtonBorderFunc = function (ButtonBorder, ClientInstance)
 	if ButtonBorder.infoContainer.infoList ~= nil then
 		ButtonBorder:show()
 		if CoD.TheaterLobby.CurrentDemo.validData == false then
-			ButtonBorder.infoContainer.infoList.fileName:setText("NAME: " .. CoD.TheaterLobby.CurrentDemo.name)-- todo localize
-			ButtonBorder.infoContainer.infoList.revision:setText("Missing Metadata")-- todo localize
+			ButtonBorder.infoContainer.infoList.fileName:setText(Engine.Localize("MENU_THEATER_NAME", CoD.TheaterLobby.CurrentDemo.name))
+			ButtonBorder.infoContainer.infoList.revision:setText(Engine.Localize("MENU_THEATER_MISSING_METADATA"))
 			ButtonBorder.infoContainer.infoList.date:setText("")
 			ButtonBorder.infoContainer.infoList.server:setText("")
 			ButtonBorder.infoContainer.infoList.map:setText("")
@@ -177,13 +177,13 @@ CoD.TheaterLobby.ShowButtonBorderFunc = function (ButtonBorder, ClientInstance)
 			ButtonBorder.infoContainer.infoList.preview.border:hide()
 			return
 		end
-		ButtonBorder.infoContainer.infoList.fileName:setText("NAME: " .. CoD.TheaterLobby.CurrentDemo.name)-- todo localize
-		ButtonBorder.infoContainer.infoList.revision:setText("VERSION: " .. CoD.TheaterLobby.CurrentDemo.revision)-- todo localize
-		ButtonBorder.infoContainer.infoList.date:setText("DATE: " .. CoD.TheaterLobby.CurrentDemo.date)-- todo localize
-		ButtonBorder.infoContainer.infoList.server:setText("HOSTNAME: " .. CoD.TheaterLobby.CurrentDemo.server)-- todo localize
-		ButtonBorder.infoContainer.infoList.map:setText("MAP: " .. CoD.TheaterLobby.GetDisplayableMap(CoD.TheaterLobby.CurrentDemo.map, CoD.TheaterLobby.CurrentDemo.gametype, CoD.TheaterLobby.CurrentDemo.location))-- todo localize
-		ButtonBorder.infoContainer.infoList.gametype:setText("GAMETYPE: " .. CoD.TheaterLobby.GetDisplayableGametype(CoD.TheaterLobby.CurrentDemo.gametype, CoD.TheaterLobby.CurrentDemo.map))-- todo localize
-		ButtonBorder.infoContainer.infoList.length:setText("LENGTH: " .. CoD.TheaterLobby.CurrentDemo.length)-- todo localize
+		ButtonBorder.infoContainer.infoList.fileName:setText(Engine.Localize("MENU_THEATER_NAME", CoD.TheaterLobby.CurrentDemo.name))
+		ButtonBorder.infoContainer.infoList.revision:setText(Engine.Localize("MENU_THEATER_VERSION", CoD.TheaterLobby.CurrentDemo.revision))
+		ButtonBorder.infoContainer.infoList.date:setText(Engine.Localize("MENU_THEATER_DATE", CoD.TheaterLobby.CurrentDemo.date))
+		ButtonBorder.infoContainer.infoList.server:setText(Engine.Localize("MENU_THEATER_HOSTNAME", CoD.TheaterLobby.CurrentDemo.server))
+		ButtonBorder.infoContainer.infoList.map:setText(Engine.Localize("MENU_THEATER_MAP", CoD.TheaterLobby.GetDisplayableMap(CoD.TheaterLobby.CurrentDemo.map, CoD.TheaterLobby.CurrentDemo.gametype, CoD.TheaterLobby.CurrentDemo.location)))
+		ButtonBorder.infoContainer.infoList.gametype:setText(Engine.Localize("MENU_THEATER_GAMETYPE", CoD.TheaterLobby.GetDisplayableGametype(CoD.TheaterLobby.CurrentDemo.gametype, CoD.TheaterLobby.CurrentDemo.map)))
+		ButtonBorder.infoContainer.infoList.length:setText(Engine.Localize("MENU_THEATER_LENGTH", CoD.TheaterLobby.CurrentDemo.length))
 		if CoD.isZombie then
 			local previewImage = "loadscreen_" .. CoD.TheaterLobby.CurrentDemo.map .. "_" .. CoD.TheaterLobby.CurrentDemo.gametype .. "_" .. CoD.TheaterLobby.CurrentDemo.location
 			ButtonBorder.infoContainer.infoList.preview:setImage(RegisterMaterial(previewImage))
@@ -220,7 +220,7 @@ CoD.TheaterLobby.CreateDemoInfoSection = function (TheaterLobbyMenu)
 		font = CoD.fonts.Condensed
 	})
 	DemoInfoList.title:setRGB(CoD.BOIIOrange.r, CoD.BOIIOrange.g, CoD.BOIIOrange.b)
-	DemoInfoList.title:setText("DEMO INFORMATION")-- todo localize
+	DemoInfoList.title:setText(Engine.Localize("MENU_THEATER_INFORMATION_CAPS"))
 	DemoInfoList.fileName = LUI.UIText.new({
 		left = 0,
 		top = 0,
@@ -608,8 +608,8 @@ LUI.createMenu.TheaterLobby = function (LocalClientIndex, f1_arg1)
 			font = CoD.fonts.Condensed
 		})
 		MapName:setText(Engine.Localize("MENU_MAP_NAME_CAPS"))
-		Date:setText("DATE")-- todo localize
-		Length:setText("LENGTH")-- todo localize
+		Date:setText(Engine.Localize("MENU_THEATER_DATE_CAPS"))
+		Length:setText(Engine.Localize("MENU_THEATER_LENGTH_CAPS"))
 		TheaterLobbyMenu.header:addSpacer(CoD.TheaterLobby.DemoListButton.TextOffset)
 		TheaterLobbyMenu.header:addElement(MapName)
 		TheaterLobbyMenu.header:addElement(Date)

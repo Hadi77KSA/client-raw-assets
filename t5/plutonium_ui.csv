@@ -1,4 +1,5 @@
 menufile,ui/menus_plutonium.txt
+menufile,ui/menus_plutonium_ingame.txt
 
 menufile,ui/xboxlive.menu
 menufile,ui/main.menu
@@ -6,7 +7,11 @@ menufile,ui/levels.menu
 menufile,ui/settings.menu
 menufile,ui/xboxlive_privatelobby.menu
 
-stringtable,maps/mapstable.csv
+menufile,ui/options_game_pc.menu
+menufile,ui/options_graphics_pc.menu
+menufile,ui/options_look_pc.menu
+menufile,ui/options_gamepad_pc.menu
+
 rawfile,coopmaps.arena
 
 material,playlist_custom

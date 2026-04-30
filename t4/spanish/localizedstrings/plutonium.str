@@ -1,10 +1,86 @@
-// Dumped from fastfile "sp_plutonium_ui".
-// In their original format the strings might have been separated in multiple files.
 VERSION             "1"
 CONFIG              "C:/projects/cod/t5/bin/StringEd.cfg"
-FILENOTES           ""
+FILENOTES           "Windows 1252 encoded; Thanks Gencrack"
 
 REFERENCE           MP_CONNECTED
 LANG_ENGLISH        "&&1 se ha conectado"
+
+REFERENCE           MENU_PLUTONIUM_FRIENDS_CAPS
+LANG_ENGLISH        "AMIGOS PLUTONIUM"
+
+REFERENCE           MENU_MINPLAYERS_COLON
+LANG_ENGLISH        "Jugadores Mínimos:"
+
+REFERENCE           MENU_NEXT_MAP
+LANG_ENGLISH        "Siguiente mapa"
+
+REFERENCE           MENU_ROUND
+LANG_ENGLISH        "Ronda"
+
+REFERENCE           MENU_ROUND_TIME
+LANG_ENGLISH        "Tiempo de Ronda"
+
+REFERENCE           MENU_DEFAULT_CONTROLLER_LAYOUT
+LANG_ENGLISH        "Controles predeterminados del mando"
+
+REFERENCE           MENU_SET_TACTICAL_LAYOUT
+LANG_ENGLISH        "Configuración táctica"
+
+REFERENCE           MENU_LOOK_SENSITIVITY
+LANG_ENGLISH        "Sensibilidad"
+
+REFERENCE           MENU_INVERT_PITCH
+LANG_ENGLISH        "Invertir eje vertical"
+
+REFERENCE           MENU_AIM_ASSIST
+LANG_ENGLISH        "Ayuda de apuntado"
+
+REFERENCE           MENU_RUMBLE
+LANG_ENGLISH        "Vibración"
+
+REFERENCE           MENU_RAW_INPUT
+LANG_ENGLISH        "Entrada directa"
+
+REFERENCE           MENU_APPLY_RESTART_GAME
+LANG_ENGLISH        "Este ajuste se aplicará después de reiniciar el juego."
+
+REFERENCE           MENU_MOUSE_ACCEL
+LANG_ENGLISH        "Aceleración del ratón"
+
+REFERENCE           MENU_MOUSE_FIX_POOLINGRATE
+LANG_ENGLISH        "Corregir lag de tasa de sondeo alta"
+
+REFERENCE           MENU_NO_BORDER
+LANG_ENGLISH        "Sin bordes"
+
+REFERENCE           MENU_FIELD_OF_VIEW
+LANG_ENGLISH        "Campo de visión"
+
+REFERENCE           MENU_FIELD_OF_VIEW_SCALE
+LANG_ENGLISH        "Escala del FOV"
+
+REFERENCE           MENU_MAXFPS
+LANG_ENGLISH        "Max FPS"
+
+REFERENCE           MENU_STREAMER_MODE
+LANG_ENGLISH        "FPS Máximos"
+
+REFERENCE           MENU_ENGINE_SLEEPS
+LANG_ENGLISH        "Reducir esperas del motor"
+
+REFERENCE           MENU_AUTORECORDCLIENTSIDEDEMOS
+LANG_ENGLISH        "Grabar demos de cliente automáticamente"
+
+REFERENCE           MENU_AUTORECORDSERVERSIDEDEMOS
+LANG_ENGLISH        "Grabar demos de servidor automáticamente"
+
+REFERENCE           MENU_IDENTIFIER
+LANG_ENGLISH        "Mostrar identificador del juego"
+
+REFERENCE           MENU_FLASH_HASHES
+LANG_ENGLISH        "Flashear hashes de script automáticamente"
+
+REFERENCE           MENU_FLASH_HASHES_NOW
+LANG_ENGLISH        "Flashear hashes de script ahora"
 
 ENDMARKER

@@ -76,7 +76,7 @@
 		CHOICE_DVAREDIT_NUMERIC( 	5, "@MENU_MINIMUM_PING", "sv_minping", 4, ; )
 		CHOICE_DVAREDIT_NUMERIC( 	6, "@MENU_MAXIMUM_PING", "sv_maxping", 4, ; )
 		CHOICE_DVARYESNO( 			7, "@MENU_VOICECHATCOLON", "sv_voice", ; )
-		CHOICE_DVAREDIT_NUMERIC(	8, "Min Players:", "sp_minplayers", 3, ; ) // todo localize
+		CHOICE_DVAREDIT_NUMERIC(	8, "@PLUTONIUM_MENU_MINPLAYERS_COLON", "sp_minplayers", 3, ; )
 		//CHOICE_DVARYESNO( 			8, "@MPUI_PUNKBUSTERWITHCOLONANDTWOSPACES", "sv_punkbuster", ; )				
 
 		CHOICE_SEPARATOR( CHOICE_SEP_2 )

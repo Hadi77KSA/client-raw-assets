@@ -1,10 +1,86 @@
-// Dumped from fastfile "en_plutonium_ui".
-// In their original format the strings might have been separated in multiple files.
 VERSION             "1"
 CONFIG              "C:/projects/cod/t5/bin/StringEd.cfg"
 FILENOTES           ""
 
 REFERENCE           MP_CONNECTED
 LANG_ENGLISH        "&&1 Connected"
+
+REFERENCE           MENU_PLUTONIUM_FRIENDS_CAPS
+LANG_ENGLISH        "PLUTONIUM FRIENDS"
+
+REFERENCE           MENU_MINPLAYERS_COLON
+LANG_ENGLISH        "Min Players:"
+
+REFERENCE           MENU_NEXT_MAP
+LANG_ENGLISH        "Next map"
+
+REFERENCE           MENU_ROUND
+LANG_ENGLISH        "Round"
+
+REFERENCE           MENU_ROUND_TIME
+LANG_ENGLISH        "Round Time"
+
+REFERENCE           MENU_DEFAULT_CONTROLLER_LAYOUT
+LANG_ENGLISH        "Default Controller Layout"
+
+REFERENCE           MENU_SET_TACTICAL_LAYOUT
+LANG_ENGLISH        "Set Tactical Layout"
+
+REFERENCE           MENU_LOOK_SENSITIVITY
+LANG_ENGLISH        "Look Sensitivity"
+
+REFERENCE           MENU_INVERT_PITCH
+LANG_ENGLISH        "Invert Pitch"
+
+REFERENCE           MENU_AIM_ASSIST
+LANG_ENGLISH        "Aim Assist"
+
+REFERENCE           MENU_RUMBLE
+LANG_ENGLISH        "Rumble"
+
+REFERENCE           MENU_RAW_INPUT
+LANG_ENGLISH        "Raw Input"
+
+REFERENCE           MENU_APPLY_RESTART_GAME
+LANG_ENGLISH        "This setting will apply after restarting your game."
+
+REFERENCE           MENU_MOUSE_ACCEL
+LANG_ENGLISH        "Mouse Acceleration"
+
+REFERENCE           MENU_MOUSE_FIX_POOLINGRATE
+LANG_ENGLISH        "Fix high poll rate lag"
+
+REFERENCE           MENU_NO_BORDER
+LANG_ENGLISH        "No Border"
+
+REFERENCE           MENU_FIELD_OF_VIEW
+LANG_ENGLISH        "Field of View"
+
+REFERENCE           MENU_FIELD_OF_VIEW_SCALE
+LANG_ENGLISH        "FoV Scale"
+
+REFERENCE           MENU_MAXFPS
+LANG_ENGLISH        "Max FPS"
+
+REFERENCE           MENU_STREAMER_MODE
+LANG_ENGLISH        "Streamer Mode"
+
+REFERENCE           MENU_ENGINE_SLEEPS
+LANG_ENGLISH        "Reduce engine sleeps"
+
+REFERENCE           MENU_AUTORECORDCLIENTSIDEDEMOS
+LANG_ENGLISH        "Auto record clientside demos"
+
+REFERENCE           MENU_AUTORECORDSERVERSIDEDEMOS
+LANG_ENGLISH        "Auto record serverside demos"
+
+REFERENCE           MENU_IDENTIFIER
+LANG_ENGLISH        "Draw game identifier"
+
+REFERENCE           MENU_FLASH_HASHES
+LANG_ENGLISH        "Auto flash script hashes"
+
+REFERENCE           MENU_FLASH_HASHES_NOW
+LANG_ENGLISH        "Flash script hashes now"
 
 ENDMARKER

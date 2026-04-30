@@ -1,0 +1,65 @@
+VERSION             "1"
+CONFIG              "C:/projects/cod/t5/bin/StringEd.cfg"
+FILENOTES           "Windows 1251 encoded; Thanks luigistyle"
+
+REFERENCE           MP_CONNECTED
+LANG_ENGLISH        "Игрок &&1 вошел в игру"
+
+REFERENCE           MENU_MINPLAYERS_CAPS
+LANG_ENGLISH        "МИН. ИГРОКОВ"
+
+REFERENCE           MENU_MINPLAYERS_HINT
+LANG_ENGLISH        "Игра будет ждать на экране загрузки, пока не будет достигнуто необходимое количество игроков."
+
+REFERENCE           MENU_CUSTOMMAPS_CAPS
+LANG_ENGLISH        "КАСТОМНЫЕ КАРТЫ"
+
+REFERENCE           MENU_NOCUSTOMMAPS
+LANG_ENGLISH        "У вас нет кастомных карт."
+
+REFERENCE           MENU_MOUSE_RAW_INPUT_CAPS
+LANG_ENGLISH        "НЕОБРАБОТАННЫЙ ВВОД"
+
+REFERENCE           PLATFORM_FOV_SCALE_CAPS
+LANG_ENGLISH        "МАСШТАБ ПОЛЯ ЗРЕНИЯ"
+
+REFERENCE           PLATFORM_CONTROLLER_VIBRATION_CAPS
+LANG_ENGLISH        "ВИБРАЦИЯ КОНТРОЛЛЕРА"
+
+REFERENCE           MENU_APPLY_RESTART_GAME
+LANG_ENGLISH        "Это настройка вступит в силу после перезапуска игры."
+
+REFERENCE           MENU_MOUSE_ACCEL_CAPS
+LANG_ENGLISH        "УСКОРЕНИЕ МЫШИ"
+
+REFERENCE           MENU_MOUSE_FIX_POOLINGRATE_CAPS
+LANG_ENGLISH        "ИСПРАВИТЬ ЛАГ ПРИ ВЫСОКОЙ ЧАСТОТЫ ОПРОСА МЫШИ"
+
+REFERENCE           MENU_NOBORDER_CAPS
+LANG_ENGLISH        "БЕЗ РАМКИ"
+
+REFERENCE           MENU_MAXFPS_CAPS
+LANG_ENGLISH        "МАКС. FPS"
+
+REFERENCE           MENU_STREAMER_MODE_CAPS
+LANG_ENGLISH        "РЕЖИМ СТРИМЕРА"
+
+REFERENCE           MENU_ENGINE_SLEEPS_CAPS
+LANG_ENGLISH        "СОКРАЩЕНИЕ ПАУЗ ОЖИДАНИЯ В ИГРОВОМ ДВИЖКЕ"
+
+REFERENCE           MENU_RECORDCLIENTDEMOS_CAPS
+LANG_ENGLISH        "ЗАПИСЫВАТЬ КЛИЕНТСКИЕ ДЕМО-ЗАПИСИ"
+
+REFERENCE           MENU_RECORDSERVERDEMOS_CAPS
+LANG_ENGLISH        "ЗАПИСЫВАТЬ СЕРВЕРНЫЕ ДЕМО-ЗАПИСИ"
+
+REFERENCE           MENU_IDENTIFIER_CAPS
+LANG_ENGLISH        "ОТОБРАЖАТЬ ИДЕНТИФИКАТОР ИГРЫ"
+
+REFERENCE           MENU_FLASH_HASHES_CAPS
+LANG_ENGLISH        "АВТОМАТИЧЕСКАЯ ВСПЫШКА ХЕШЕЙ СКРИПТОВ"
+
+REFERENCE           MENU_FLASH_HASHES_NOW_CAPS
+LANG_ENGLISH        "ОТОБРОЗИТЬ ХЕШИ СКРИПТОВ СЕЙЧАС"
+
+ENDMARKER

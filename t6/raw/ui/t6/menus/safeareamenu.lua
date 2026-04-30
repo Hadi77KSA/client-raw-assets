@@ -224,7 +224,7 @@ LUI.createMenu.SafeArea = function (LocalClientIndex)
 		font = CoD.fonts.Default
 	})
 	if CoD.useMouse then
-		SafeAreaAdjustHorizontalText:setText("Drag left / right") -- todo localize
+		SafeAreaAdjustHorizontalText:setText(Engine.Localize("PLATFORM_SAFE_AREA_CONTROLS_LEFT_RIGHT"))
 	else
 		SafeAreaAdjustHorizontalText:setText(Engine.Localize("PLATFORM_SAFE_AREA_ADJUST_HORIZONTAL"))
 	end
@@ -242,7 +242,7 @@ LUI.createMenu.SafeArea = function (LocalClientIndex)
 		font = CoD.fonts.Default
 	})
 	if CoD.useMouse then
-		SafeAreaAdjustVerticalText:setText("Drag up / down") -- todo localize
+		SafeAreaAdjustVerticalText:setText(Engine.Localize("PLATFORM_SAFE_AREA_CONTROLS_UP_DOWN"))
 	else
 		SafeAreaAdjustVerticalText:setText(Engine.Localize("PLATFORM_SAFE_AREA_ADJUST_VERTICAL"))
 	end

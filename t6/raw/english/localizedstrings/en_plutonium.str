@@ -1,0 +1,253 @@
+VERSION             "1"
+CONFIG              "C:/projects/cod/t6/bin/StringEd.cfg"
+FILENOTES           "T6 is all UTF-8 encoded"
+
+// MODS
+
+REFERENCE           MOD_LOAD
+LANG_ENGLISH        "Load Mod?"
+
+REFERENCE           MOD_DESCRIPTION
+LANG_ENGLISH        "Description: &&1"
+
+REFERENCE           MOD_VERSION
+LANG_ENGLISH        "Version: &&1"
+
+REFERENCE           MOD_NONE_FOR_MODE
+LANG_ENGLISH        "No mods found for the current mode.\nMake sure mod is prefixed with \"&&1\" to be found."
+
+REFERENCE           MENU_UNLOAD
+LANG_ENGLISH        "Unload"
+
+// PARTYLOBBY
+
+REFERENCE           MENU_UNLOCK_ALL_CAPS
+LANG_ENGLISH        "UNLOCK ALL"
+
+REFERENCE           MENU_UNLOCK_POPUP
+LANG_ENGLISH        "Are you sure you want to unlock everything?"
+
+REFERENCE           MENU_UNLOCK_STATS_BUTTON
+LANG_ENGLISH        "Unlock all stats"
+
+REFERENCE           MENU_RESET_STATS_BUTTON
+LANG_ENGLISH        "Reset all stats"
+
+// OPTIONCONTROLS
+
+REFERENCE           MENU_SLIDER_ARROW_HINT
+LANG_ENGLISH        "Use the left and right arrow keys for more precise adjustments."
+
+REFERENCE           MENU_MOUSE_RAW_INPUT_CAPS
+LANG_ENGLISH        "RAW INPUT"
+
+REFERENCE           MENU_MOUSE_RAW_INPUT_HINT
+LANG_ENGLISH        "Enable Raw Input, for changes to take effect, restarting the game is required."
+
+REFERENCE           MENU_MOUSE_ACCEL_CAPS
+LANG_ENGLISH        "MOUSE ACCELERATION"
+
+REFERENCE           MENU_MOUSE_FIX_POOLINGRATE_CAPS
+LANG_ENGLISH        "FIX HIGH POLL RATE LAG"
+
+REFERENCE           MENU_MOUSE_FIX_POOLINGRATE_HINT
+LANG_ENGLISH        "Reduces FPS drops with input devices with high polling rates."
+
+REFERENCE           PLATFORM_NEXT_SCORE_STREAK_HINT
+LANG_ENGLISH        "Key used to take equipment out."
+
+REFERENCE           PLATFORM_PREVIOUS_SCORE_STREAK_HINT
+LANG_ENGLISH        "Key used to take out the quadrotor (Origins only)."
+
+REFERENCE           PLATFORM_ACTIVATE_SCORE_STREAK_HINT
+LANG_ENGLISH        "Key used to take Claymores out."
+
+REFERENCE           MENU_TARGET_ASSIST_DISABLED_INGAME
+LANG_ENGLISH        "Aim Assist is disabled on this server."
+
+REFERENCE           MENU_GPAD_STICK_DEADZONE_MAX_CAPS
+LANG_ENGLISH        "DEADZONE MAX"
+
+REFERENCE           MENU_GPAD_STICK_DEADZONE_MAX_HINT
+LANG_ENGLISH        "Stick maximum input threshold."
+
+REFERENCE           MENU_GPAD_STICK_DEADZONE_MIN_CAPS
+LANG_ENGLISH        "DEADZONE MIN"
+
+REFERENCE           MENU_GPAD_STICK_DEADZONE_MIN_HINT
+LANG_ENGLISH        "Stick minimum input threshold. Lower values make the sticks more responsive to tiny movements."
+
+// OPTIONSETTINGS
+
+REFERENCE           PLATFORM_MAX_FPS_DESC
+LANG_ENGLISH        "Set the maximum frames per second. Sync Every Frame must be disabled to adjust Max FPS. ^3Anything ^3above ^1250 ^3will result in movement issues, sprint issues and flickering Connection Interrupted popups."
+
+REFERENCE           PLATFORM_FOV_SCALE_CAPS
+LANG_ENGLISH        "FOV SCALE"
+
+REFERENCE           PLATFORM_FOV_SCALE_HINT
+LANG_ENGLISH        "Scale applied to the field of view."
+
+REFERENCE           PLATFORM_FOV_SENSITIVITY_CAPS
+LANG_ENGLISH        "FOV SENSITIVITY"
+
+REFERENCE           PLATFORM_FOV_SENSITIVITY_HINT
+LANG_ENGLISH        "When enabled, your sensitivity is scaled based on your FoV Scale."
+
+REFERENCE           MENU_STREAMER_MODE_CAPS
+LANG_ENGLISH        "STREAMER MODE"
+
+REFERENCE           MENU_STREAMER_MODE_HINT
+LANG_ENGLISH        "Hides important networking and player information."
+
+REFERENCE           MENU_SAFE_AREA_ADJUSTMENT_HINT
+LANG_ENGLISH        "Edit the HUD safearea."
+
+REFERENCE           MENU_ALLOW_DOWNLOAD_HINT
+LANG_ENGLISH        "When enabled, allow downloading mods from server."
+
+REFERENCE           MENU_ENGINE_SLEEPS_CAPS
+LANG_ENGLISH        "REDUCE ENGINE SLEEPS"
+
+REFERENCE           MENU_ENGINE_SLEEPS_HINT
+LANG_ENGLISH        "When enabled, improves FPS by reducing sleeps that the engine does."
+
+REFERENCE           MENU_IDENTIFIER_CAPS
+LANG_ENGLISH        "DRAW GAME IDENTIFIER"
+
+REFERENCE           MENU_IDENTIFIER_HINT
+LANG_ENGLISH        "When enabled, draws an unique identifier on the screen."
+
+REFERENCE           MENU_FLASH_HASHES_CAPS
+LANG_ENGLISH        "AUTO FLASH SCRIPT HASHES"
+
+REFERENCE           MENU_FLASH_HASHES_HINT
+LANG_ENGLISH        "When enabled, flashes hashes on the screen at game start."
+
+REFERENCE           MENU_FLASH_HASHES_NOW_CAPS
+LANG_ENGLISH        "FLASH SCRIPT HASHES NOW"
+
+REFERENCE           MENU_FLASH_HASHES_NOW_HINT
+LANG_ENGLISH        "Flash the script's hashes onto the screen now."
+
+// SAFEAREA
+
+REFERENCE           PLATFORM_SAFE_AREA_CONTROLS_LEFT_RIGHT
+LANG_ENGLISH        "Drag left / right"
+
+REFERENCE           PLATFORM_SAFE_AREA_CONTROLS_UP_DOWN
+LANG_ENGLISH        "Drag up / down"
+
+// SERVERBROWSERFILTERSPOPUP
+
+REFERENCE           MENU_SERVER_BROWSER_CURRENT
+LANG_ENGLISH        "Current: &&1"
+
+REFERENCE           MENU_SERVER_BROWSER_FILTER
+LANG_ENGLISH        "Enter a filter"
+
+REFERENCE           MENU_SERVER_BROWSER_SEARCH_FILTER_CAPS
+LANG_ENGLISH        "SEARCH FILTER"
+
+REFERENCE           MENU_SERVER_BROWSER_SEARCH_FILTER_HINT
+LANG_ENGLISH        "Enter text to filter the server list by."
+
+REFERENCE           MENU_SERVER_BROWSER_DISPLAY_EMPTY_CAPS
+LANG_ENGLISH        "DISPLAY EMPTY SERVERS"
+
+REFERENCE           MENU_SERVER_BROWSER_DISPLAY_EMPTY_HINT
+LANG_ENGLISH        "Show empty servers on the server list."
+
+// SERVERBROWSERSERVERINFO
+
+REFERENCE           SERVERBROWSER_NO_SERVER_SELECTED
+LANG_ENGLISH        "No server selected"
+
+REFERENCE           SERVERBROWSER_CONNECT_TO_SERVER_CAPS
+LANG_ENGLISH        "CONNECT TO SERVER"
+
+REFERENCE           SERVERBROWSER_CONNECT_TO_SERVER_HINT
+LANG_ENGLISH        "Connect to the server."
+
+REFERENCE           SERVERBROWSER_HOSTNAME
+LANG_ENGLISH        "HOSTNAME: &&1"
+
+REFERENCE           SERVERBROWSER_MAX_PLAYERS
+LANG_ENGLISH        "MAX PLAYERS: &&1"
+
+REFERENCE           SERVERBROWSER_MAP_NAME
+LANG_ENGLISH        "MAP NAME: &&1"
+
+REFERENCE           SERVERBROWSER_GAMETYPE
+LANG_ENGLISH        "GAMETYPE: &&1"
+
+REFERENCE           SERVERBROWSER_PING
+LANG_ENGLISH        "PING: &&1"
+
+REFERENCE           SERVERBROWSER_PLAYERS
+LANG_ENGLISH        "PLAYERS: &&1"
+
+// LOADING
+
+REFERENCE           MPTIP_PLUTONIUM
+LANG_ENGLISH        "Without the hard work of all of the Plutonium developers the games we love would have died off long ago."
+
+// PRIVATEGAMELOBBY
+
+REFERENCE           SERVER_CONNECT
+LANG_ENGLISH        "Connect to the server."
+
+REFERENCE           MENU_TARGET_ASSIST
+LANG_ENGLISH        "Aim Assist"
+
+REFERENCE           MENU_TARGET_ASSIST_HINT
+LANG_ENGLISH        "Allow aim assist option for all controller players."
+
+REFERENCE           MENU_MINPLAYERS_CAPS
+LANG_ENGLISH        "MIN PLAYERS"
+
+REFERENCE           MENU_MINPLAYERS_HINT
+LANG_ENGLISH        "The game will wait at the loadscreen until the amount of players ingame is reached."
+
+REFERENCE           MENU_CHEATS_CAPS
+LANG_ENGLISH        "CHEATS"
+
+REFERENCE           MENU_CHEATS_HINT
+LANG_ENGLISH        "Enable cheats on server."
+
+// THEATERLOBBY
+
+REFERENCE           MENU_THEATER_NAME
+LANG_ENGLISH        "NAME: &&1"
+
+REFERENCE           MENU_THEATER_MISSING_METADATA
+LANG_ENGLISH        "Missing Metadata"
+
+REFERENCE           MENU_THEATER_VERSION
+LANG_ENGLISH        "VERSION: &&1"
+
+REFERENCE           MENU_THEATER_DATE
+LANG_ENGLISH        "DATE: &&1"
+
+REFERENCE           MENU_THEATER_HOSTNAME
+LANG_ENGLISH        "HOSTNAME: &&1"
+
+REFERENCE           MENU_THEATER_MAP
+LANG_ENGLISH        "MAP: &&1"
+
+REFERENCE           MENU_THEATER_GAMETYPE
+LANG_ENGLISH        "GAMETYPE: &&1"
+
+REFERENCE           MENU_THEATER_LENGTH
+LANG_ENGLISH        "LENGTH: &&1"
+
+REFERENCE           MENU_THEATER_INFORMATION_CAPS
+LANG_ENGLISH        "DEMO INFORMATION"
+
+REFERENCE           MENU_THEATER_DATE_CAPS
+LANG_ENGLISH        "DATE"
+
+REFERENCE           MENU_THEATER_LENGTH_CAPS
+LANG_ENGLISH        "LENGTH"
+
+ENDMARKER

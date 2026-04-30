@@ -1,0 +1,148 @@
+#include "ui/menudef.h"
+#include "ui_mp/common_macro.inc"
+#define OPTIONS_STYLE			1
+#include "ui_mp/menustyle.inc"
+#include "ui/choices_setup_common.menu"
+#include "ui/framestyle.inc"
+#include "ui/frame.inc"
+
+#undef CHOICE_BUTTON_NAME
+#define CHOICE_BUTTON_NAME		"options_look_"
+#undef MENUDEF_NAME
+#define MENUDEF_NAME			options_look
+
+#undef	OPTIONS_LOOK_HEIGHT
+#undef	OPTIONS_LOOK_WIDTH
+#define OPTIONS_LOOK_HEIGHT		332
+#define OPTIONS_LOOK_WIDTH		OPTIONS_LOOK_HEIGHT * FRAME_ASPECT_RATIO
+
+{
+	menuDef
+	{
+		name			"options_look"
+		fullScreen		0
+		rect			0 0 640 480
+		focusColor		COLOR_FOCUSED
+		soundloop		""
+
+		onOpen
+		{
+			LOCAL_CLOSE_ALL_BUT( options_look )
+			
+			setLocalVarBool ui_hideBack 1;
+			
+			if (IsInGame())
+			{
+				showMenu "pausedbkgnd";
+			}			
+			else
+			{
+				activateBlur;
+			}
+		}
+		onClose
+		{
+			setLocalVarBool ui_hideBack 0;
+
+			if (IsInGame())
+			{
+				hideMenu "pausedbkgnd";
+			}			
+			else
+			{
+				deactivateBlur;
+			}
+		}
+		onESC
+		{
+			close self;
+			open options_controls_new_pc;
+		}
+		PC_TAB_SWITCH_ACTIONS( options_controls_new_pc, options_new_pc, options_new_pc )
+
+		#include "ui_mp/leftside_controls.inc"
+		
+#undef	CHOICE_X_START
+#undef	CHOICE_Y_START
+#undef	CHOICE_HORIZONTAL_ALIGN
+#undef	CHOICE_VERTICAL_ALIGN
+#undef	CHOICE_DVAR_EXTRA_WIDTH
+#undef	CHOICE_TEXT_OFFSET_X
+
+#define CHOICE_HORIZONTAL_ALIGN		HORIZONTAL_ALIGN_CENTER
+#define CHOICE_VERTICAL_ALIGN		VERTICAL_ALIGN_CENTER
+#define CHOICE_X_START				((-OPTIONS_LOOK_WIDTH/2) - 75)
+#define CHOICE_Y_START				((-OPTIONS_LOOK_HEIGHT/2) + 32)
+#define CHOICE_DVAR_EXTRA_WIDTH		120
+#define CHOICE_TEXT_OFFSET_X		-10
+
+#undef CHOICE_TEXTSTYLE
+#undef CHOICE_TEXTSIZE
+#define CHOICE_TEXTSTYLE		ITEM_TEXTSTYLE_NORMAL
+#define CHOICE_TEXTSIZE			TEXTSIZE_DEFAULT
+
+#undef	CHOICE_TEXT_COLOR_NO_HL
+#undef	CHOICE_TEXT_COLOR_HL
+#undef	CHOICE_CAPTION_TEXT_COLOR_NO_HL
+#undef	CHOICE_CAPTION_TEXT_COLOR_HL
+
+#define	CHOICE_TEXT_COLOR_NO_HL			CHOICE_TEXTCOLOR
+#define	CHOICE_TEXT_COLOR_HL			1 1 1 1
+#define	CHOICE_CAPTION_TEXT_COLOR_NO_HL	CHOICE_TEXTCOLOR
+#define	CHOICE_CAPTION_TEXT_COLOR_HL	0 0 0 1
+
+		FRAME_CHOICE_SECTION_TITLE( 21, "@MENU_LOOK_CAPS" )
+		FRAME_CHOICE_DVARYESNO_VIS( 22, "@MENU_INVERT_MOUSE_CAPS", ui_mousePitch, uiScript update ui_mousePitch, 1 )
+		FRAME_CHOICE_BIND( 23, "@MENU_LEAN_LEFT_CAPS", "+leanleft", ; )
+		FRAME_CHOICE_BIND( 24, "@MENU_LEAN_RIGHT_CAPS", "+leanright", ; )
+		FRAME_CHOICE_BIND( 25, "@MENU_LOOK_UP_CAPS", "+lookup", ; )
+		FRAME_CHOICE_BIND( 26, "@MENU_LOOK_DOWN_CAPS", "+lookdown", ; )
+		FRAME_CHOICE_BIND( 27, "@MENU_TURN_LEFT_CAPS", "+left", ; )
+		FRAME_CHOICE_BIND( 28, "@MENU_TURN_RIGHT_CAPS", "+right", ; )
+		FRAME_CHOICE_BIND( 29, "@MENU_MOUSE_LOOK_CAPS", "+mlook", ; )
+		FRAME_CHOICE_BIND( 30, "@MENU_CENTER_VIEW_CAPS", "centerview", ; )
+		FRAME_CHOICE_DVARYESNO_VIS( 31, "@MENU_FREE_LOOK_CAPS", cl_freelook, ;, 1 )
+
+#define MY_CHOICE_DVAREDIT_VIS( itemIndex, dvarArg, max_chars, max_paintchars, actionArg, visArg ) \
+		itemDef \
+		{ \
+			type			ITEM_TYPE_EDITFIELD \
+			text			" " \
+			dvar			dvarArg \
+			rect			CHOICE_ORIGIN( itemIndex ) (CHOICE_SIZE_X+120) CHOICE_SIZE_Y CHOICE_HORIZONTAL_ALIGN CHOICE_VERTICAL_ALIGN \
+			textalign		ITEM_ALIGN_MIDDLE_LEFT \
+			textalignx		(CHOICE_SIZE_X+8) /*(-(CHOICE_TEXT_OFFSET_X))*/ \
+			textscale		CHOICE_TEXTSIZE \
+			textstyle		ITEM_TEXTSTYLE_SHADOWED \
+			style			WINDOW_STYLE_FILLED \
+			forecolor		CHOICE_TEXTCOLOR \
+			visible			visArg \
+			maxChars		max_chars \
+			maxpaintchars	max_paintchars \
+			CHOICE_SCRIPTS_ACTION( itemIndex, actionArg ) \
+		}
+
+#undef CHOICE_SIZE_X
+#define CHOICE_SIZE_X			270
+		MY_CHOICE_DVAREDIT_VIS( 32, sensitivity, 31, 18, ;, 1 )
+#undef CHOICE_SIZE_X
+#define CHOICE_SIZE_X			170
+
+		FRAME_DVARSLIDER( 32, "@MENU_MOUSE_SENSITIVITY_CAPS", sensitivity, 5, 1, 30, ; )
+
+		FRAME_CHOICE_DVARYESNO_VIS( 33, "@PLUTONIUM_MENU_MOUSE_RAW_INPUT_CAPS", raw_input, execnow "set com_errorTitle @MENU_NOTICE_CAPS;set com_errorMessage @PLUTONIUM_MENU_APPLY_RESTART_GAME"; open error_popmenu;, 1 )
+
+#undef CHOICE_SIZE_X
+#define CHOICE_SIZE_X			270
+		MY_CHOICE_DVAREDIT_VIS( 34, cl_mouseAccel, 31, 18, ;, 1 )
+#undef CHOICE_SIZE_X
+#define CHOICE_SIZE_X			170
+
+		FRAME_DVARSLIDER( 34, "@PLUTONIUM_MENU_MOUSE_ACCEL_CAPS", cl_mouseAccel, 0, 0, 2, ; )
+
+		FRAME_CHOICE_DVARYESNO_VIS( 35, "@PLUTONIUM_MENU_MOUSE_FIX_POOLINGRATE_CAPS", fix_mouse_lag, ;, 1 )
+
+		//CHOICE_BACK( "@MENU_BACK", close self )
+
+	}
+}

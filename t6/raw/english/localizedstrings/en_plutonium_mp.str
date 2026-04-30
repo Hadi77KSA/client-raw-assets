@@ -1,8 +1,0 @@
-VERSION             "1"
-CONFIG              "C:/projects/cod/t6/bin/StringEd.cfg"
-FILENOTES           ""
-
-REFERENCE           PLATFORM_MAX_FPS_DESC
-LANG_ENGLISH        "Set the maximum frames per second. Sync Every Frame must be disabled to adjust Max FPS. ^3Anything ^3above ^1250 ^3will result in movement issues, sprint issues and flickering Connection Interrupted popups."
-
-ENDMARKER

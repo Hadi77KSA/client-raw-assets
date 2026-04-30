@@ -1,0 +1,253 @@
+VERSION             "1"
+CONFIG              "C:/projects/cod/t6/bin/StringEd.cfg"
+FILENOTES           "Thanks Flo203"
+
+// MODS
+
+REFERENCE           MOD_LOAD
+LANG_ENGLISH        "Charger le mod ?"
+
+REFERENCE           MOD_DESCRIPTION
+LANG_ENGLISH        "Description: &&1"
+
+REFERENCE           MOD_VERSION
+LANG_ENGLISH        "Version: &&1"
+
+REFERENCE           MOD_NONE_FOR_MODE
+LANG_ENGLISH        "Aucun mods trouvé pour le mode actuel.\nVérifiez que le mode contient le préfix\"&&1\" pour être trouvé."
+
+REFERENCE           MENU_UNLOAD
+LANG_ENGLISH        "Décharger le mod"
+
+// PARTYLOBBY
+
+REFERENCE           MENU_UNLOCK_ALL_CAPS
+LANG_ENGLISH        "TOUT DÉBLOQUER"
+
+REFERENCE           MENU_UNLOCK_POPUP
+LANG_ENGLISH        "Êtes vous sûr de vouloir tout débloquer ?"
+
+REFERENCE           MENU_UNLOCK_STATS_BUTTON
+LANG_ENGLISH        "Débloquer toutes les stats"
+
+REFERENCE           MENU_RESET_STATS_BUTTON
+LANG_ENGLISH        "Réinitialiser toutes les stats"
+
+// OPTIONCONTROLS
+
+REFERENCE           MENU_SLIDER_ARROW_HINT
+LANG_ENGLISH        "Utilisez les touches fléchées pour des ajustements plus précis."
+
+REFERENCE           MENU_MOUSE_RAW_INPUT_CAPS
+LANG_ENGLISH        "ENTRÉE BRUTE"
+
+REFERENCE           MENU_MOUSE_RAW_INPUT_HINT
+LANG_ENGLISH        "Activer l'entrée brute, un redémarage du jeu est nécessaire pour que les changements prennent effet."
+
+REFERENCE           MENU_MOUSE_ACCEL_CAPS
+LANG_ENGLISH        "ACCÉLÉRATION DE SOURIS"
+
+REFERENCE           MENU_MOUSE_FIX_POOLINGRATE_CAPS
+LANG_ENGLISH        "FIX HIGH POLL RATE LAG"
+
+REFERENCE           MENU_MOUSE_FIX_POOLINGRATE_HINT
+LANG_ENGLISH        "Réduit les chutes d'FPS pour les périphériques d'entrée ayant un pollling rate élevé."
+
+REFERENCE           PLATFORM_NEXT_SCORE_STREAK_HINT
+LANG_ENGLISH        "Touche utilisée pour sortir l'équipement."
+
+REFERENCE           PLATFORM_PREVIOUS_SCORE_STREAK_HINT
+LANG_ENGLISH        "Touche utilisée pour sortir le Drone de Maxis(Origins uniquement)."
+
+REFERENCE           PLATFORM_ACTIVATE_SCORE_STREAK_HINT
+LANG_ENGLISH        "Touche utilisée pour sortir les claymores."
+
+REFERENCE           MENU_TARGET_ASSIST_DISABLED_INGAME
+LANG_ENGLISH        "L'aide à la visée est désactivée sur ce serveur."
+
+REFERENCE           MENU_GPAD_STICK_DEADZONE_MAX_CAPS
+LANG_ENGLISH        "ZONE MORTE MAX"
+
+REFERENCE           MENU_GPAD_STICK_DEADZONE_MAX_HINT
+LANG_ENGLISH        "Seuil maximum de l'entrée du Joystick."
+
+REFERENCE           MENU_GPAD_STICK_DEADZONE_MIN_CAPS
+LANG_ENGLISH        "ZONE MORTE MIN"
+
+REFERENCE           MENU_GPAD_STICK_DEADZONE_MIN_HINT
+LANG_ENGLISH        "Seuil minimum d'entrée du Joystick. Des valeurs basses rendent les Joysticks plus réactifs pour des mouvements faibles."
+
+// OPTIONSETTINGS
+
+REFERENCE           PLATFORM_MAX_FPS_DESC
+LANG_ENGLISH        "Activer le nombre d'imgages par seconde maxiumum. La synchronisation à chaque image doit être désactivée pour pouvoir changer le nombre maximum d'images par seconde. ^3AN'importe quelle valeur ^3au dessus de ^1250 ^3causera des problèmes dans les déplacements,sprint et des messages de connection interrompue."
+
+REFERENCE           PLATFORM_FOV_SCALE_CAPS
+LANG_ENGLISH        "ÉCHELLE DU CHAMP DE VISION"
+
+REFERENCE           PLATFORM_FOV_SCALE_HINT
+LANG_ENGLISH        "Échelle du champ de vision modifiée."
+
+REFERENCE           PLATFORM_FOV_SENSITIVITY_CAPS
+LANG_ENGLISH        "SENSIBILITÉ DU CHAMP DE VISION"
+
+REFERENCE           PLATFORM_FOV_SENSITIVITY_HINT
+LANG_ENGLISH        "Quand l'option est activée, votre sensibilité sera basée sur l'échelle du champ de vision"
+
+REFERENCE           MENU_STREAMER_MODE_CAPS
+LANG_ENGLISH        "MODE STREAMER"
+
+REFERENCE           MENU_STREAMER_MODE_HINT
+LANG_ENGLISH        "Cache les informations importantes sur le le réseau et les joueurs."
+
+REFERENCE           MENU_SAFE_AREA_ADJUSTMENT_HINT
+LANG_ENGLISH        "Modifier la zone de sécurité de l'ATH."
+
+REFERENCE           MENU_ALLOW_DOWNLOAD_HINT
+LANG_ENGLISH        "Quand l'option est activée, le télechargement de mods depuis le serveur est autorisé."
+
+REFERENCE           MENU_ENGINE_SLEEPS_CAPS
+LANG_ENGLISH        "RÉDUIT ENGINE SLEEPS"
+
+REFERENCE           MENU_ENGINE_SLEEPS_HINT
+LANG_ENGLISH        "Quand l'option est activée, le nombre d'images par seconde est amélioré en réduisant le 'sleep' fait par le moteur du jeu."
+
+REFERENCE           MENU_IDENTIFIER_CAPS
+LANG_ENGLISH        "AFFICHAGE D'IDENTIFICATEUR DE JEU"
+
+REFERENCE           MENU_IDENTIFIER_HINT
+LANG_ENGLISH        "Quand l'option est activée, un identificateur de jeu sera affiché à l'écran ."
+
+REFERENCE           MENU_FLASH_HASHES_CAPS
+LANG_ENGLISH        "AUTO FLASH SCRIPT HASHES"
+
+REFERENCE           MENU_FLASH_HASHES_HINT
+LANG_ENGLISH        "Quand l'option est activée, 'hashes' sera visible sur l'écran lors du démarrage du jeu."
+
+REFERENCE           MENU_FLASH_HASHES_NOW_CAPS
+LANG_ENGLISH        "FLASH SCRIPT HASHES NOW"
+
+REFERENCE           MENU_FLASH_HASHES_NOW_HINT
+LANG_ENGLISH        "Flash the script's hashes onto the screen now."
+
+// SAFEAREA
+
+REFERENCE           PLATFORM_SAFE_AREA_CONTROLS_LEFT_RIGHT
+LANG_ENGLISH        "Glisser vers la gauche / droite"
+
+REFERENCE           PLATFORM_SAFE_AREA_CONTROLS_UP_DOWN
+LANG_ENGLISH        "Glisser vers le haut / bas"
+
+// SERVERBROWSERFILTERSPOPUP
+
+REFERENCE           MENU_SERVER_BROWSER_CURRENT
+LANG_ENGLISH        "Actuel: &&1"
+
+REFERENCE           MENU_SERVER_BROWSER_FILTER
+LANG_ENGLISH        "Entrer un filtre"
+
+REFERENCE           MENU_SERVER_BROWSER_SEARCH_FILTER_CAPS
+LANG_ENGLISH        "CHERCHER UN FILTRE"
+
+REFERENCE           MENU_SERVER_BROWSER_SEARCH_FILTER_HINT
+LANG_ENGLISH        "Entrez  texte pour filtrer la liste du serveur."
+
+REFERENCE           MENU_SERVER_BROWSER_DISPLAY_EMPTY_CAPS
+LANG_ENGLISH        "AFFICHER LES SERVEURS VIDES"
+
+REFERENCE           MENU_SERVER_BROWSER_DISPLAY_EMPTY_HINT
+LANG_ENGLISH        "Afficher les serveurs vides sur la liste des serveurs."
+
+// SERVERBROWSERSERVERINFO
+
+REFERENCE           SERVERBROWSER_NO_SERVER_SELECTED
+LANG_ENGLISH        "Aucun serveur séléctionné"
+
+REFERENCE           SERVERBROWSER_CONNECT_TO_SERVER_CAPS
+LANG_ENGLISH        "CONNECTION AU SERVEUR"
+
+REFERENCE           SERVERBROWSER_CONNECT_TO_SERVER_HINT
+LANG_ENGLISH        "Connection au serveur."
+
+REFERENCE           SERVERBROWSER_HOSTNAME
+LANG_ENGLISH        "NOM DE L'HOTE: &&1"
+
+REFERENCE           SERVERBROWSER_MAX_PLAYERS
+LANG_ENGLISH        "JOUEURS MAX: &&1"
+
+REFERENCE           SERVERBROWSER_MAP_NAME
+LANG_ENGLISH        "NOM DE LA CARTE: &&1"
+
+REFERENCE           SERVERBROWSER_GAMETYPE
+LANG_ENGLISH        "MODE DE JEU: &&1"
+
+REFERENCE           SERVERBROWSER_PING
+LANG_ENGLISH        "PING: &&1"
+
+REFERENCE           SERVERBROWSER_PLAYERS
+LANG_ENGLISH        "JOUEURS: &&1"
+
+// LOADING
+
+REFERENCE           MPTIP_PLUTONIUM
+LANG_ENGLISH        "Sans l'énorme travail venant de tout les développeurs de Plutonium, les jeux que nous aimons auraient fini a l'abandon il y a très longtemps."
+
+// PRIVATEGAMELOBBY
+
+REFERENCE           SERVER_CONNECT
+LANG_ENGLISH        "Connection au serveur."
+
+REFERENCE           MENU_TARGET_ASSIST
+LANG_ENGLISH        "Aide à la visée"
+
+REFERENCE           MENU_TARGET_ASSIST_HINT
+LANG_ENGLISH        "Autoriser l'option d'aide à la visée pour tout les joueurs manette."
+
+REFERENCE           MENU_MINPLAYERS_CAPS
+LANG_ENGLISH        "JOUEURS MIN"
+
+REFERENCE           MENU_MINPLAYERS_HINT
+LANG_ENGLISH        "Le jeu attendra que le nombre de joueurs dans la partie soit atteint lors de l'écran de chargement."
+
+REFERENCE           MENU_CHEATS_CAPS
+LANG_ENGLISH        "CHEATS"
+
+REFERENCE           MENU_CHEATS_HINT
+LANG_ENGLISH        "Activer les cheats sur le serveur."
+
+// THEATERLOBBY
+
+REFERENCE           MENU_THEATER_NAME
+LANG_ENGLISH        "NOM: &&1"
+
+REFERENCE           MENU_THEATER_MISSING_METADATA
+LANG_ENGLISH        "Manque Metadata"
+
+REFERENCE           MENU_THEATER_VERSION
+LANG_ENGLISH        "VERSION: &&1"
+
+REFERENCE           MENU_THEATER_DATE
+LANG_ENGLISH        "DATE: &&1"
+
+REFERENCE           MENU_THEATER_HOSTNAME
+LANG_ENGLISH        "NOM DE L'HOST: &&1"
+
+REFERENCE           MENU_THEATER_MAP
+LANG_ENGLISH        "CARTE: &&1"
+
+REFERENCE           MENU_THEATER_GAMETYPE
+LANG_ENGLISH        "MODE DE JEU: &&1"
+
+REFERENCE           MENU_THEATER_LENGTH
+LANG_ENGLISH        "DURÉE: &&1"
+
+REFERENCE           MENU_THEATER_INFORMATION_CAPS
+LANG_ENGLISH        "DEMO INFORMATION"
+
+REFERENCE           MENU_THEATER_DATE_CAPS
+LANG_ENGLISH        "DATE"
+
+REFERENCE           MENU_THEATER_LENGTH_CAPS
+LANG_ENGLISH        "DURÉE"
+
+ENDMARKER

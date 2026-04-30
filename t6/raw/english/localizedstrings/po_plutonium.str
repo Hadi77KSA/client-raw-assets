@@ -1,0 +1,251 @@
+VERSION             "1"
+CONFIG              "C:/projects/cod/t6/bin/StringEd.cfg"
+FILENOTES           "Thanks Ziomix"
+
+// MODS
+
+REFERENCE           MOD_LOAD
+LANG_ENGLISH        "Załadować mod?"
+
+REFERENCE           MOD_DESCRIPTION
+LANG_ENGLISH        "Opis: &&1"
+
+REFERENCE           MOD_VERSION
+LANG_ENGLISH        "Wersja: &&1"
+
+REFERENCE           MOD_NONE_FOR_MODE
+LANG_ENGLISH        "Brak modyfikacji dla aktualnie włączonego trybu gry.\nUpewnij się, że nazwa moda jest poprzedzona \"&&1\"."
+
+REFERENCE           MENU_UNLOAD
+LANG_ENGLISH        "Odłącz"
+
+// PARTYLOBBY
+
+REFERENCE           MENU_UNLOCK_ALL_CAPS
+LANG_ENGLISH        "ODBLOKUJ WSZYSTKO"
+
+REFERENCE           MENU_UNLOCK_POPUP
+LANG_ENGLISH        "Czy na pewno chcesz wszystko odblokować?"
+
+REFERENCE           MENU_UNLOCK_STATS_BUTTON
+LANG_ENGLISH        "Odblokuj cały postęp kariery"
+
+REFERENCE           MENU_RESET_STATS_BUTTON
+LANG_ENGLISH        "Zresetuj postęp kariery"
+
+// OPTIONCONTROLS
+
+REFERENCE           MENU_SLIDER_ARROW_HINT
+LANG_ENGLISH        "Użyj strzałek lewo/prawo aby ustawić precyzyjne wartości."
+
+REFERENCE           MENU_MOUSE_RAW_INPUT_CAPS
+LANG_ENGLISH        "SUROWE DANE WEJŚCIOWE"
+
+REFERENCE           MENU_MOUSE_RAW_INPUT_HINT
+LANG_ENGLISH        "Włącz surowe dane wejściowe urządzeń peryferyjnych. Wymaga restartu gry."
+
+REFERENCE           MENU_MOUSE_ACCEL_CAPS
+LANG_ENGLISH        "AKCELERACJA MYSZY"
+
+REFERENCE           MENU_MOUSE_FIX_POOLINGRATE_CAPS
+LANG_ENGLISH        "POPRAWKA DLA WYS. POOLING RATE"
+
+REFERENCE           MENU_MOUSE_FIX_POOLINGRATE_HINT
+LANG_ENGLISH        "Redukuje spadki FPS przy urządzeniach peryferyjnych o wysokiej częstotliwości raportowania."
+
+REFERENCE           PLATFORM_NEXT_SCORE_STREAK_HINT
+LANG_ENGLISH        "Przycisk użycia ekwipunku."
+
+REFERENCE           PLATFORM_PREVIOUS_SCORE_STREAK_HINT
+LANG_ENGLISH        "Przycisk użycia quadkoptera (tylko Origins)."
+
+REFERENCE           PLATFORM_ACTIVATE_SCORE_STREAK_HINT
+LANG_ENGLISH        "Przycisk użycia miny Claymore."
+
+REFERENCE           MENU_TARGET_ASSIST_DISABLED_INGAME
+LANG_ENGLISH        "Asysta celowania jest wyłączona na tym serwerze."
+
+REFERENCE           MENU_GPAD_STICK_DEADZONE_MAX_CAPS
+LANG_ENGLISH        "MAKS. MARTWA STREFA"
+
+REFERENCE           MENU_GPAD_STICK_DEADZONE_MAX_HINT
+LANG_ENGLISH        "Maksymalny próg wejściowy gałki kontrolera."
+
+REFERENCE           MENU_GPAD_STICK_DEADZONE_MIN_CAPS
+LANG_ENGLISH        "MIN. MARTWA STREFA"
+
+REFERENCE           MENU_GPAD_STICK_DEADZONE_MIN_HINT
+LANG_ENGLISH        "Minimalny próg wejściowy gałki kontrolera. Niższe wartości nadają gałkom większą responsywność przy drobnych ruchach."
+
+REFERENCE           PLATFORM_MAX_FPS_DESC
+LANG_ENGLISH        "Określ maksymalną liczbę klatek na sekunde. Aby zmienić tę liczbę, należy wyłączyć opcje synchronizacji każdej klatki. ^3Wszystko ^3powyżej ^1250 ^3spowoduje problemy z fizyką ruchu postaci, problemy ze sprintem ^3oraz migotanie informacji o przerwanym połączeniu."
+
+REFERENCE           PLATFORM_FOV_SCALE_CAPS
+LANG_ENGLISH        "SKALA FOV"
+
+REFERENCE           PLATFORM_FOV_SCALE_HINT
+LANG_ENGLISH        "Skalowanie pola widzenia."
+
+REFERENCE           PLATFORM_FOV_SENSITIVITY_CAPS
+LANG_ENGLISH        "CZUŁOŚĆ FOV"
+
+REFERENCE           PLATFORM_FOV_SENSITIVITY_HINT
+LANG_ENGLISH        "Gdy włączone, czułość myszki skaluje się ze skalą pola widzenia."
+
+REFERENCE           MENU_STREAMER_MODE_CAPS
+LANG_ENGLISH        "TRYB STREAMERA"
+
+REFERENCE           MENU_STREAMER_MODE_HINT
+LANG_ENGLISH        "Ukrywa informacje sieciowe i profilu gracza."
+
+REFERENCE           MENU_SAFE_AREA_ADJUSTMENT_HINT
+LANG_ENGLISH        "Edycja obszaru bezpiecznego HUD."
+
+REFERENCE           MENU_ALLOW_DOWNLOAD_HINT
+LANG_ENGLISH        "Pozwala na pobieranie modyfikacji bezpośrednio z serwera."
+
+REFERENCE           MENU_ENGINE_SLEEPS_CAPS
+LANG_ENGLISH        "OGRANICZENIE OPÓŹNIEŃ SILNIKA"
+
+REFERENCE           MENU_ENGINE_SLEEPS_HINT
+LANG_ENGLISH        "Poprawia wydajność poprzez redukcje opóźnień silnika gry."
+
+REFERENCE           MENU_IDENTIFIER_CAPS
+LANG_ENGLISH        "WYŚWIETLANIE IDENTYFIKATORA GRY"
+
+REFERENCE           MENU_IDENTIFIER_HINT
+LANG_ENGLISH        "Włącza wyświetlanie unikalnego identyfikatora meczu."
+
+REFERENCE           MENU_FLASH_HASHES_CAPS
+LANG_ENGLISH        "POKAZYWANIE HASHY SKRYPTÓW"
+
+REFERENCE           MENU_FLASH_HASHES_HINT
+LANG_ENGLISH        "Wyświetlane są hashe załadowanych skryptów na starcie meczu."
+
+REFERENCE           MENU_FLASH_HASHES_NOW_CAPS
+LANG_ENGLISH        "WYŚWIETL HASHE SKRYPTÓW"
+
+REFERENCE           MENU_FLASH_HASHES_NOW_HINT
+LANG_ENGLISH        "Wyświetl hashe skryptów na ekranie w tym momencie."
+
+// SAFEAREA
+
+REFERENCE           PLATFORM_SAFE_AREA_CONTROLS_LEFT_RIGHT
+LANG_ENGLISH        "Przeciągnij w lewo / prawo"
+
+REFERENCE           PLATFORM_SAFE_AREA_CONTROLS_UP_DOWN
+LANG_ENGLISH        "Przeciągnij w górę / dół"
+
+// SERVERBROWSERFILTERSPOPUP
+
+REFERENCE           MENU_SERVER_BROWSER_CURRENT
+LANG_ENGLISH        "Aktualny filter: &&1"
+
+REFERENCE           MENU_SERVER_BROWSER_FILTER
+LANG_ENGLISH        "Wprowadź szukaną fraze"
+
+REFERENCE           MENU_SERVER_BROWSER_SEARCH_FILTER_CAPS
+LANG_ENGLISH        "USTAW FILTER"
+
+REFERENCE           MENU_SERVER_BROWSER_SEARCH_FILTER_HINT
+LANG_ENGLISH        "Tekstowe filtrowanie listy serwerów"
+
+REFERENCE           MENU_SERVER_BROWSER_DISPLAY_EMPTY_CAPS
+LANG_ENGLISH        "POKAZUJ PUSTE SERWERY"
+
+REFERENCE           MENU_SERVER_BROWSER_DISPLAY_EMPTY_HINT
+LANG_ENGLISH        "Czy wyświetlać puste serwery na liście."
+
+// SERVERBROWSERSERVERINFO
+
+REFERENCE           SERVERBROWSER_NO_SERVER_SELECTED
+LANG_ENGLISH        "Nie wybrano serwera"
+
+REFERENCE           SERVERBROWSER_CONNECT_TO_SERVER_CAPS
+LANG_ENGLISH        "POŁĄCZ SIĘ Z SERWEREM"
+
+REFERENCE           SERVERBROWSER_CONNECT_TO_SERVER_HINT
+LANG_ENGLISH        "Połączenie z serwerem."
+
+REFERENCE           SERVERBROWSER_HOSTNAME
+LANG_ENGLISH        "NAZWA HOSTA: &&1"
+
+REFERENCE           SERVERBROWSER_MAX_PLAYERS
+LANG_ENGLISH        "MAKS GRACZY: &&1"
+
+REFERENCE           SERVERBROWSER_MAP_NAME
+LANG_ENGLISH        "MAPA: &&1"
+
+REFERENCE           SERVERBROWSER_GAMETYPE
+LANG_ENGLISH        "TRYB GRY: &&1"
+
+REFERENCE           SERVERBROWSER_PING
+LANG_ENGLISH        "PING: &&1"
+
+REFERENCE           SERVERBROWSER_PLAYERS
+LANG_ENGLISH        "GRACZY: &&1"
+
+// LOADING
+
+REFERENCE           MPTIP_PLUTONIUM
+LANG_ENGLISH        "Gdyby nie ciężka praca deweloperów Plutonium, nasze ukochane gry już dawno temu by umarły."
+
+// PRIVATEGAMELOBBY
+
+REFERENCE           SERVER_CONNECT
+LANG_ENGLISH        "Połącz się z serwerem."
+
+REFERENCE           MENU_TARGET_ASSIST
+LANG_ENGLISH        "Asysta Celowania"
+
+REFERENCE           MENU_TARGET_ASSIST_HINT
+LANG_ENGLISH        "Pozwala na użycie asysty celowania dla wszystkich graczy na gamepadzie."
+
+REFERENCE           MENU_MINPLAYERS_CAPS
+LANG_ENGLISH        "MINIMUM GRACZY"
+
+REFERENCE           MENU_MINPLAYERS_HINT
+LANG_ENGLISH        "Gra pozostanie na ekranie ładowania do momentu podłączenia się wszystkich graczy."
+
+REFERENCE           MENU_CHEATS_CAPS
+LANG_ENGLISH        "CHEATY"
+
+REFERENCE           MENU_CHEATS_HINT
+LANG_ENGLISH        "Włącz cheaty na serwerze."
+
+// THEATERLOBBY
+
+REFERENCE           MENU_THEATER_NAME
+LANG_ENGLISH        "NAZWA: &&1"
+
+REFERENCE           MENU_THEATER_MISSING_METADATA
+LANG_ENGLISH        "Brakujące Metadane"
+
+REFERENCE           MENU_THEATER_VERSION
+LANG_ENGLISH        "WERSJA: &&1"
+
+REFERENCE           MENU_THEATER_DATE
+LANG_ENGLISH        "DATA: &&1"
+
+REFERENCE           MENU_THEATER_HOSTNAME
+LANG_ENGLISH        "NAZWA HOSTA: &&1"
+
+REFERENCE           MENU_THEATER_MAP
+LANG_ENGLISH        "MAPA: &&1"
+
+REFERENCE           MENU_THEATER_GAMETYPE
+LANG_ENGLISH        "TRYB GRY: &&1"
+
+REFERENCE           MENU_THEATER_LENGTH
+LANG_ENGLISH        "DŁUGOŚĆ: &&1"
+
+REFERENCE           MENU_THEATER_INFORMATION_CAPS
+LANG_ENGLISH        "INFORMACJE O DEMIE"
+
+REFERENCE           MENU_THEATER_DATE_CAPS
+LANG_ENGLISH        "DATA"
+
+REFERENCE           MENU_THEATER_LENGTH_CAPS
+LANG_ENGLISH        "DŁUGOŚĆ"
+
+ENDMARKER

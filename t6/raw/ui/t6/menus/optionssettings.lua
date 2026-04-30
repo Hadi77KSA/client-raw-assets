@@ -567,12 +567,12 @@ CoD.OptionsSettings.CreateGraphicsTab = function (GraphicsTab, LocalClientIndex)
 	local FOVSlider = CoD.OptionsSettings.AddDvarLeftRightSlider(GraphicsTabButtonList, LocalClientIndex, Engine.Localize("PLATFORM_FIELD_OF_VIEW_CAPS"), "cg_fov_default", 65, 120, Engine.Localize("PLATFORM_FOV_DESC"))
 	FOVSlider:setNumericDisplayFormatString("%d")
 	
-	local FOVScaleSlider = GraphicsTabButtonList:addDvarLeftRightSlider(LocalClientIndex, "FOV SCALE", "cg_fovscale", 0.5, 2, "Scale applied to the field of view.") -- todo localize
+	local FOVScaleSlider = GraphicsTabButtonList:addDvarLeftRightSlider(LocalClientIndex, Engine.Localize("PLATFORM_FOV_SCALE_CAPS"), "cg_fovscale", 0.5, 2, Engine.Localize("PLATFORM_FOV_SCALE_HINT"))
 	FOVScaleSlider:setNumericDisplayFormatString("%.2f")
 	FOVScaleSlider:setRoundToFraction(0.05)
 	FOVScaleSlider:setBarSpeed(0.01)
 	
-	local FOVSensitivity = GraphicsTabButtonList:addDvarLeftRightSelector(LocalClientIndex, "FOV SENSITIVITY", "cg_usefovsensitivity", "When enabled, your sensitivity is scaled based on your fovScale") -- todo localize
+	local FOVSensitivity = GraphicsTabButtonList:addDvarLeftRightSelector(LocalClientIndex, Engine.Localize("PLATFORM_FOV_SENSITIVITY_CAPS"), "cg_usefovsensitivity", Engine.Localize("PLATFORM_FOV_SENSITIVITY_HINT"))
 	FOVSensitivity:addChoice(LocalClientIndex, Engine.Localize("MENU_DISABLED_CAPS"), 0, nil, CoD.OptionsSettings.Button_ApplyDvarChanged)
 	FOVSensitivity:addChoice(LocalClientIndex, Engine.Localize("MENU_ENABLED_CAPS"), 1, nil, CoD.OptionsSettings.Button_ApplyDvarChanged)
 	
@@ -587,11 +587,17 @@ CoD.OptionsSettings.CreateGraphicsTab = function (GraphicsTab, LocalClientIndex)
 	CoD.Options.Button_AddChoices_EnabledOrDisabled( f41_local9 )
 	f41_local9:disableCycling()
 	f41_local9:registerEventHandler( "button_action", function ( element, event )
-		element:dispatchEventToParent( {
-			name = "open_mature_content",
-			controller = event.controller
-		} )
+		if UIExpression.IsInGame() == 0 then
+			element:dispatchEventToParent( {
+				name = "open_mature_content",
+				controller = event.controller
+			} )
+		end
 	end )
+	
+	if UIExpression.IsInGame() == 1 then
+		CoD.LeftRightSelector.MakeReadOnly(f41_local9, {})
+	end
 
 	CoD.Options.Button_AddChoices_EnabledOrDisabled(GraphicsTabButtonList:addHardwareProfileLeftRightSelector(Engine.Localize("PLATFORM_RAGDOLL_CAPS"), "ragdoll_enable", Engine.Localize("PLATFORM_RAGDOLL_DESC")))
 	GraphicsTabButtonList:addSpacer(CoD.CoD9Button.Height / 2)
@@ -635,10 +641,10 @@ CoD.OptionsSettings.CreateAdvancedTab = function (AdvancedTab, LocalClientIndex)
 	CoD.OptionsSettings.Button_AddChoices_DrawFPS(AdvancedTabButtonList:addHardwareProfileLeftRightSelector(Engine.Localize("PLATFORM_DRAW_FPS_CAPS"), "cg_drawFPS", Engine.Localize("PLATFORM_DRAW_FPS_DESC")))
 	AdvancedTabButtonList:addSpacer(CoD.CoD9Button.Height / 2)
 	
-	CoD.OptionsSettings.Button_AddChoices_StreamerMode(AdvancedTabButtonList:addHardwareProfileLeftRightSelector("STREAMER MODE", "cl_enableStreamerMode", "Hides important networking and player information")) -- todo localize
+	CoD.OptionsSettings.Button_AddChoices_StreamerMode(AdvancedTabButtonList:addHardwareProfileLeftRightSelector(Engine.Localize("MENU_STREAMER_MODE_CAPS"), "cl_enableStreamerMode", Engine.Localize("MENU_STREAMER_MODE_HINT")))
 	AdvancedTabButtonList:addSpacer(CoD.CoD9Button.Height / 2)
 	
-	local SafeAreaButton = AdvancedTabButtonList:addButton(Engine.Localize("MENU_SAFE_AREA_ADJUSTMENT_CAPS"), "Edit the HUD safearea.") -- todo localize
+	local SafeAreaButton = AdvancedTabButtonList:addButton(Engine.Localize("MENU_SAFE_AREA_ADJUSTMENT_CAPS"), Engine.Localize("MENU_SAFE_AREA_ADJUSTMENT_HINT"))
 	SafeAreaButton:setActionEventName("open_safe_area")
 	
 	return AdvancedTabContainer
@@ -689,6 +695,42 @@ CoD.OptionsSettings.CreateVoiceChatTab = function (f44_arg0, f44_arg1)
 	return f44_local0
 end
 
+CoD.OptionsSettings.CreateGameTab = function (f44_arg0, f44_arg1)
+	local f44_local0 = LUI.UIContainer.new()
+	local f44_local1 = CoD.Options.CreateButtonList()
+	f44_arg0.buttonList = f44_local1
+	f44_local0:addElement(f44_local1)
+
+	local allowDownload = f44_local1:addDvarLeftRightSelector(f44_arg1, Engine.Localize("MENU_ALLOW_DOWNLOAD_CAPS"), "cl_allowDownload", Engine.Localize("MENU_ALLOW_DOWNLOAD_HINT"))
+	allowDownload:addChoice(f44_arg1, Engine.Localize("MENU_DISABLED_CAPS"), 0, nil, CoD.OptionsSettings.Button_ApplyDvarChanged)
+	allowDownload:addChoice(f44_arg1, Engine.Localize("MENU_ENABLED_CAPS"), 1, nil, CoD.OptionsSettings.Button_ApplyDvarChanged)
+
+	local busyWait = f44_local1:addDvarLeftRightSelector(f44_arg1, Engine.Localize("MENU_ENGINE_SLEEPS_CAPS"), "com_busyWait", Engine.Localize("MENU_ENGINE_SLEEPS_HINT"))
+	busyWait:addChoice(f44_arg1, Engine.Localize("MENU_DISABLED_CAPS"), 0, nil, CoD.OptionsSettings.Button_ApplyDvarChanged)
+	busyWait:addChoice(f44_arg1, Engine.Localize("MENU_ENABLED_CAPS"), 1, nil, CoD.OptionsSettings.Button_ApplyDvarChanged)
+
+	local drawIdent = f44_local1:addDvarLeftRightSelector(f44_arg1, Engine.Localize("MENU_IDENTIFIER_CAPS"), "cg_drawIdentifier", Engine.Localize("MENU_IDENTIFIER_HINT"))
+	drawIdent:addChoice(f44_arg1, Engine.Localize("MENU_DISABLED_CAPS"), 0, nil, CoD.OptionsSettings.Button_ApplyDvarChanged)
+	drawIdent:addChoice(f44_arg1, Engine.Localize("MENU_ENABLED_CAPS"), 1, nil, CoD.OptionsSettings.Button_ApplyDvarChanged)
+
+	if CoD.isZombie then
+		local flashHashes = f44_local1:addDvarLeftRightSelector(f44_arg1, Engine.Localize("MENU_FLASH_HASHES_CAPS"), "cg_flashScriptHashes", Engine.Localize("MENU_FLASH_HASHES_HINT"))
+		flashHashes:addChoice(f44_arg1, Engine.Localize("MENU_DISABLED_CAPS"), 0, nil, CoD.OptionsSettings.Button_ApplyDvarChanged)
+		flashHashes:addChoice(f44_arg1, Engine.Localize("MENU_ENABLED_CAPS"), 1, nil, CoD.OptionsSettings.Button_ApplyDvarChanged)
+		flashHashes:addChoice(f44_arg1, Engine.Localize("MENU_ALL"), 2, nil, CoD.OptionsSettings.Button_ApplyDvarChanged)
+
+		if UIExpression.IsInGame() == 1 then
+			local flashHashesButton = f44_local1:addDvarLeftRightSelector(f44_arg1, Engine.Localize("MENU_FLASH_HASHES_NOW_CAPS"), "", Engine.Localize("MENU_FLASH_HASHES_NOW_HINT"))
+
+			flashHashesButton:registerEventHandler( "button_action", function ( element, event )
+				Engine.Exec(event.controller, "flashscripthashes")
+			end )
+		end
+	end
+
+	return f44_local0
+end
+
 LUI.createMenu.OptionsSettingsMenu = function (LocalClientIndex)
 	local OptionsSettingsWidget = nil
 	local InGame = UIExpression.IsInGame() == 1
@@ -728,11 +770,12 @@ LUI.createMenu.OptionsSettingsMenu = function (LocalClientIndex)
 		Engine.SyncHardwareProfileWithDvars()
 	end
 	CoD.OptionsSettings.DoNotSyncProfile = nil
-	local SettingsTabs = CoD.Options.SetupTabManager(OptionsSettingsWidget, 500)
+	local SettingsTabs = CoD.Options.SetupTabManager(OptionsSettingsWidget, 600)
 	SettingsTabs:addTab(LocalClientIndex, "MENU_GRAPHICS_CAPS", CoD.OptionsSettings.CreateGraphicsTab)
 	SettingsTabs:addTab(LocalClientIndex, "MENU_ADVANCED_CAPS", CoD.OptionsSettings.CreateAdvancedTab)
 	SettingsTabs:addTab(LocalClientIndex, "MENU_SOUND_CAPS", CoD.OptionsSettings.CreateSoundTab)
 	SettingsTabs:addTab(LocalClientIndex, "MENU_VOICECHAT_CAPS", CoD.OptionsSettings.CreateVoiceChatTab)
+	SettingsTabs:addTab(LocalClientIndex, "MENU_GAME_CAPS", CoD.OptionsSettings.CreateGameTab)
 	if CoD.OptionsSettings.CurrentTabIndex then
 		SettingsTabs:loadTab(LocalClientIndex, CoD.OptionsSettings.CurrentTabIndex)
 	else

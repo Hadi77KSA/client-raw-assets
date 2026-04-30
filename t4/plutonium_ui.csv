@@ -1,8 +1,11 @@
 menufile,ui/menus_plutonium.txt
 
-menufile,ui_mp/options_multi_.menu
 menufile,ui/main_.menu
-menufile,ui/options_game_pc_.menu
-menufile,ui/options_graphics_pc_.menu
 menufile,ui/xboxlive_lobby_.menu
 menufile,ui/pc_gamesetup_coop_.menu
+
+menufile,ui/options_game_pc_.menu
+menufile,ui/options_graphics_pc_.menu
+menufile,ui_mp/options_multi_.menu
+menufile,ui/options_look_pc_.menu
+menufile,ui/options_misc_pc_.menu

@@ -13,7 +13,7 @@ end
 LUI.createMenu.UnlockAllPopup = function (f9_arg0)
 	local UnlockAllPopup = CoD.Menu.NewSmallPopup("UnlockAllPopup")
 	CoD.perController[f9_arg0].firstTime = true
-	CoD.PopupMenus.SetupConfirmPopup(UnlockAllPopup, "UNLOCK ALL", "Are you sure you want to unlock everything?", CoD.PopupMenus.UnlockAll, CoD.PopupMenus.ClosePopupAfterConfirmation) -- todo localize
+	CoD.PopupMenus.SetupConfirmPopup(UnlockAllPopup, Engine.Localize("MENU_UNLOCK_ALL_CAPS"), Engine.Localize("MENU_UNLOCK_POPUP"), CoD.PopupMenus.UnlockAll, CoD.PopupMenus.ClosePopupAfterConfirmation)
 	UnlockAllPopup:setPriority(1000)
 	UnlockAllPopup.confirmButton:processEvent({
 		name = "gain_focus"
@@ -408,11 +408,11 @@ CoD.PartyLobby.PopulateButtons_Multiplayer = function (PartyLobbyButtonPane)
 	PartyLobbyButtonPane.body.barracksButton:setActionEventName("open_barracks")
 	CoD.SetupBarracksLock(PartyLobbyButtonPane.body.barracksButton)
 	CoD.SetupBarracksNew(PartyLobbyButtonPane.body.barracksButton)
-	PartyLobbyButtonPane.body.unlockAllButton = PartyLobbyButtonPane.body.buttonList:addButton("UNLOCK ALL", nil, 5) -- todo localize
-	PartyLobbyButtonPane.body.unlockAllButton.hintText = "Unlock all stats" -- todo localize
+	PartyLobbyButtonPane.body.unlockAllButton = PartyLobbyButtonPane.body.buttonList:addButton(Engine.Localize("MENU_UNLOCK_ALL_CAPS"), nil, 5)
+	PartyLobbyButtonPane.body.unlockAllButton.hintText = Engine.Localize("MENU_UNLOCK_STATS_BUTTON")
 	PartyLobbyButtonPane.body.unlockAllButton:registerEventHandler("button_action", CoD.PartyLobby.Button_UnlockAll)
 	PartyLobbyButtonPane.body.resetStatsButton = PartyLobbyButtonPane.body.buttonList:addButton(Engine.Localize("MPUI_RESET_STATS_CAPS"), nil, 6)
-	PartyLobbyButtonPane.body.resetStatsButton.hintText = "Reset all stats" -- todo localize
+	PartyLobbyButtonPane.body.resetStatsButton.hintText = Engine.Localize("MENU_RESET_STATS_BUTTON")
 	PartyLobbyButtonPane.body.resetStatsButton:registerEventHandler("button_action", CoD.PartyLobby.Button_ResetStats)
 end
 

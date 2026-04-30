@@ -1,0 +1,253 @@
+VERSION             "1"
+CONFIG              "C:/projects/cod/t6/bin/StringEd.cfg"
+FILENOTES           "Thanks luigistyle"
+
+// MODS
+
+REFERENCE           MOD_LOAD
+LANG_ENGLISH        "Загрузить Мод?"
+
+REFERENCE           MOD_DESCRIPTION
+LANG_ENGLISH        "Описание: &&1"
+
+REFERENCE           MOD_VERSION
+LANG_ENGLISH        "Версия: &&1"
+
+REFERENCE           MOD_NONE_FOR_MODE
+LANG_ENGLISH        "Для текущего режима модификации не найдены.\nУбедитесь что перед названием мода стоит префикс \"&&1\" чтобы он был обнаружен."
+
+REFERENCE           MENU_UNLOAD
+LANG_ENGLISH        "Разгрузить"
+
+// PARTYLOBBY
+
+REFERENCE           MENU_UNLOCK_ALL_CAPS
+LANG_ENGLISH        "РАЗБЛОКИРОВАТЬ ВСЁ"
+
+REFERENCE           MENU_UNLOCK_POPUP
+LANG_ENGLISH        "Вы уверены что хотите разблокировать всё?"
+
+REFERENCE           MENU_UNLOCK_STATS_BUTTON
+LANG_ENGLISH        "Разблокировать все статистики"
+
+REFERENCE           MENU_RESET_STATS_BUTTON
+LANG_ENGLISH        "Повернуть назад все статистики"
+
+// OPTIONCONTROLS
+
+REFERENCE           MENU_SLIDER_ARROW_HINT
+LANG_ENGLISH        "Для более точной настройки, используйте левые и правые стрелочные клавишы."
+
+REFERENCE           MENU_MOUSE_RAW_INPUT_CAPS
+LANG_ENGLISH        "НЕОБРАБОТАННЫЙ ВВОД"
+
+REFERENCE           MENU_MOUSE_RAW_INPUT_HINT
+LANG_ENGLISH        "Включить необработанный ввод. Чтобы изменения вступили в силу, необходимо её перезапустить."
+
+REFERENCE           MENU_MOUSE_ACCEL_CAPS
+LANG_ENGLISH        "УСКОРЕНИЕ МЫШИ"
+
+REFERENCE           MENU_MOUSE_FIX_POOLINGRATE_CAPS
+LANG_ENGLISH        "ИСПРАВИТЬ ЛАГ ПРИ ВЫСОКОЙ ЧАСТОТЫ ОПРОСА МЫШИ"
+
+REFERENCE           MENU_MOUSE_FIX_POOLINGRATE_HINT
+LANG_ENGLISH        "Снижает падения FPS при использовании устройств ввода с высокой частотой опроса."
+
+REFERENCE           PLATFORM_NEXT_SCORE_STREAK_HINT
+LANG_ENGLISH        "Кнопка для выноса оборудования."
+
+REFERENCE           PLATFORM_PREVIOUS_SCORE_STREAK_HINT
+LANG_ENGLISH        "Кнопка для уборки квадрокоптера (только в Origins)."
+
+REFERENCE           PLATFORM_ACTIVATE_SCORE_STREAK_HINT
+LANG_ENGLISH        "Кнопка для уборки мин 'Клеймор'."
+
+REFERENCE           MENU_TARGET_ASSIST_DISABLED_INGAME
+LANG_ENGLISH        "Помощь в прицеливании отключена на этом сервере."
+
+REFERENCE           MENU_GPAD_STICK_DEADZONE_MAX_CAPS
+LANG_ENGLISH        "МАКСИМАЛЬНАЯ МЕРТВАЯ ЗОНА"
+
+REFERENCE           MENU_GPAD_STICK_DEADZONE_MAX_HINT
+LANG_ENGLISH        "Максимальное позволенное движение джойстика контроллера."
+
+REFERENCE           MENU_GPAD_STICK_DEADZONE_MIN_CAPS
+LANG_ENGLISH        "МИНИМАЛЬНАЯ МЕРТВАЯ ЗОНА"
+
+REFERENCE           MENU_GPAD_STICK_DEADZONE_MIN_HINT
+LANG_ENGLISH        "Минимальное позволенное движение джойстика контроллера. Чем меньше эта цифра, тем лучше джойстики будут реагировать на маленькие движения."
+
+// OPTIONSETTINGS
+
+REFERENCE           PLATFORM_MAX_FPS_DESC
+LANG_ENGLISH        "Укажите максимальное количество FPS. Чтобы менять эту настройку, необходимо выключить вертикальною синхронизацию. ^3Любая ^3цифра ^3выше ^1250 ^3приведет к проблемам с движением, спринте и периодическому появлению всплывающих сообщений 'Connection Interrupted'."
+
+REFERENCE           PLATFORM_FOV_SCALE_CAPS
+LANG_ENGLISH        "МАСШТАБ ПОЛЯ ЗРЕНИЯ"
+
+REFERENCE           PLATFORM_FOV_SCALE_HINT
+LANG_ENGLISH        "Масштаб примененный к полю зрения."
+
+REFERENCE           PLATFORM_FOV_SENSITIVITY_CAPS
+LANG_ENGLISH        "ЧУВСТВИТЕЛЬНОСТЬ С УЧЁТОМ ПОЛЯ ЗРЕНИЯ"
+
+REFERENCE           PLATFORM_FOV_SENSITIVITY_HINT
+LANG_ENGLISH        "Если включено, чувствительность изменяется в зависимости от масштаба поля зрения"
+
+REFERENCE           MENU_STREAMER_MODE_CAPS
+LANG_ENGLISH        "РЕЖИМ СТРИМЕРА"
+
+REFERENCE           MENU_STREAMER_MODE_HINT
+LANG_ENGLISH        "Скрывает важную информацию о сети и игроках."
+
+REFERENCE           MENU_SAFE_AREA_ADJUSTMENT_HINT
+LANG_ENGLISH        "Настроить безопасную зону интерфейса."
+
+REFERENCE           MENU_ALLOW_DOWNLOAD_HINT
+LANG_ENGLISH        "Если включено, разрешена загрузка модов с сервера."
+
+REFERENCE           MENU_ENGINE_SLEEPS_CAPS
+LANG_ENGLISH        "СОКРАЩЕНИЕ ПАУЗ ОЖИДАНИЯ В ИГРОВОМ ДВИЖКЕ"
+
+REFERENCE           MENU_ENGINE_SLEEPS_HINT
+LANG_ENGLISH        "Если включено, повышает FPS за счёт уменьшения пауз ожидания в игровом движке."
+
+REFERENCE           MENU_IDENTIFIER_CAPS
+LANG_ENGLISH        "ОТОБРАЖАТЬ ИДЕНТИФИКАТОР ИГРЫ"
+
+REFERENCE           MENU_IDENTIFIER_HINT
+LANG_ENGLISH        "Если включено, на экране отображается уникальный идентификатор."
+
+REFERENCE           MENU_FLASH_HASHES_CAPS
+LANG_ENGLISH        "АВТОМАТИЧЕСКАЯ ВСПЫШКА ХЕШЕЙ СКРИПТОВ"
+
+REFERENCE           MENU_FLASH_HASHES_HINT
+LANG_ENGLISH        "Если включено, при запуске игры на экране кратковременно отображаются хеши скриптов."
+
+REFERENCE           MENU_FLASH_HASHES_NOW_CAPS
+LANG_ENGLISH        "ОТОБРОЗИТЬ ХЕШИ СКРИПТОВ СЕЙЧАС"
+
+REFERENCE           MENU_FLASH_HASHES_NOW_HINT
+LANG_ENGLISH        "Отобразить хеши скриптов на экран прямо сейчас."
+
+// SAFEAREA
+
+REFERENCE           PLATFORM_SAFE_AREA_CONTROLS_LEFT_RIGHT
+LANG_ENGLISH        "Сдвиньте влево / вправо"
+
+REFERENCE           PLATFORM_SAFE_AREA_CONTROLS_UP_DOWN
+LANG_ENGLISH        "Сдвиньте вверх / вниз"
+
+// SERVERBROWSERFILTERSPOPUP
+
+REFERENCE           MENU_SERVER_BROWSER_CURRENT
+LANG_ENGLISH        "Текущий: &&1"
+
+REFERENCE           MENU_SERVER_BROWSER_FILTER
+LANG_ENGLISH        "Введите фильтр"
+
+REFERENCE           MENU_SERVER_BROWSER_SEARCH_FILTER_CAPS
+LANG_ENGLISH        "ФИЛЬТР ПОИСКА"
+
+REFERENCE           MENU_SERVER_BROWSER_SEARCH_FILTER_HINT
+LANG_ENGLISH        "Введите текст для фильтрации списка серверов."
+
+REFERENCE           MENU_SERVER_BROWSER_DISPLAY_EMPTY_CAPS
+LANG_ENGLISH        "ПОКАЗЫВАТЬ ПУСТЫЕ СЕРВЕРЫ"
+
+REFERENCE           MENU_SERVER_BROWSER_DISPLAY_EMPTY_HINT
+LANG_ENGLISH        "Показывать пустые серверы в списке серверов."
+
+// SERVERBROWSERSERVERINFO
+
+REFERENCE           SERVERBROWSER_NO_SERVER_SELECTED
+LANG_ENGLISH        "Сервер не выбран"
+
+REFERENCE           SERVERBROWSER_CONNECT_TO_SERVER_CAPS
+LANG_ENGLISH        "ПОДКЛЮЧИТЬСЯ К СЕРВЕРУ"
+
+REFERENCE           SERVERBROWSER_CONNECT_TO_SERVER_HINT
+LANG_ENGLISH        "Подключиться к серверу."
+
+REFERENCE           SERVERBROWSER_HOSTNAME
+LANG_ENGLISH        "ИМЯ СЕРВЕРА: &&1"
+
+REFERENCE           SERVERBROWSER_MAX_PLAYERS
+LANG_ENGLISH        "МАКС. ИГРОКОВ: &&1"
+
+REFERENCE           SERVERBROWSER_MAP_NAME
+LANG_ENGLISH        "НАЗВАНИЕ КАРТЫ: &&1"
+
+REFERENCE           SERVERBROWSER_GAMETYPE
+LANG_ENGLISH        "РЕЖИМ ИГРЫ: &&1"
+
+REFERENCE           SERVERBROWSER_PING
+LANG_ENGLISH        "ПИНГ: &&1"
+
+REFERENCE           SERVERBROWSER_PLAYERS
+LANG_ENGLISH        "ИГРОКИ: &&1"
+
+// LOADING
+
+REFERENCE           MPTIP_PLUTONIUM
+LANG_ENGLISH        "Без упорного труда разработчиков Plutonium, эти игры которые мы так любим давно бы исчезли."
+
+// PRIVATEGAMELOBBY
+
+REFERENCE           SERVER_CONNECT
+LANG_ENGLISH        "Подключиться к серверу."
+
+REFERENCE           MENU_TARGET_ASSIST
+LANG_ENGLISH        "Помощь в прицеливании"
+
+REFERENCE           MENU_TARGET_ASSIST_HINT
+LANG_ENGLISH        "Разрешить помощь в прицеливании для всех игроков с контроллером."
+
+REFERENCE           MENU_MINPLAYERS_CAPS
+LANG_ENGLISH        "МИН. ИГРОКОВ"
+
+REFERENCE           MENU_MINPLAYERS_HINT
+LANG_ENGLISH        "Игра будет ждать на экране загрузки, пока не будет достигнуто необходимое количество игроков."
+
+REFERENCE           MENU_CHEATS_CAPS
+LANG_ENGLISH        "ЧИТЫ"
+
+REFERENCE           MENU_CHEATS_HINT
+LANG_ENGLISH        "Включить читы на сервере."
+
+// THEATERLOBBY
+
+REFERENCE           MENU_THEATER_NAME
+LANG_ENGLISH        "ИМЯ: &&1"
+
+REFERENCE           MENU_THEATER_MISSING_METADATA
+LANG_ENGLISH        "Отсутствуют метаданные"
+
+REFERENCE           MENU_THEATER_VERSION
+LANG_ENGLISH        "ВЕРСИЯ: &&1"
+
+REFERENCE           MENU_THEATER_DATE
+LANG_ENGLISH        "ДАТА: &&1"
+
+REFERENCE           MENU_THEATER_HOSTNAME
+LANG_ENGLISH        "ИМЯ СЕРВЕРА: &&1"
+
+REFERENCE           MENU_THEATER_MAP
+LANG_ENGLISH        "КАРТА: &&1"
+
+REFERENCE           MENU_THEATER_GAMETYPE
+LANG_ENGLISH        "РЕЖИМ ИГРЫ: &&1"
+
+REFERENCE           MENU_THEATER_LENGTH
+LANG_ENGLISH        "ДЛИТЕЛЬНОСТЬ: &&1"
+
+REFERENCE           MENU_THEATER_INFORMATION_CAPS
+LANG_ENGLISH        "ИНФОРМАЦИЯ О ДЕМО-ЗАПИСИ"
+
+REFERENCE           MENU_THEATER_DATE_CAPS
+LANG_ENGLISH        "ДАТА"
+
+REFERENCE           MENU_THEATER_LENGTH_CAPS
+LANG_ENGLISH        "ДЛИТЕЛЬНОСТЬ"
+
+ENDMARKER

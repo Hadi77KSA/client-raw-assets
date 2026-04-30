@@ -11,12 +11,12 @@ CoD.ServerBrowserFilters.UpdateSearchFilterText = function (self, text)
 		text = UIExpression.DvarString(0, "ui_serverbrowser_searchfilter")
 	end
 
-	self:setText("CURENT: " .. text) -- todo localize
+	self:setText(Engine.Localize("MENU_SERVER_BROWSER_CURRENT", text))
 	Engine.ExecNow(0, "set ui_serverbrowser_searchfilter \"" .. text .. "\"\n")
 end
 
 CoD.ServerBrowserFilters.OpenFilterEditor = function (self, event)
-	Engine.Exec(0, "ui_keyboard_new 7 " .. "\"Enter a filter\"" .. "\"" .. UIExpression.DvarString(0, "ui_serverbrowser_searchfilter") .. "\"" .. 256) -- todo localize
+	Engine.Exec(0, "ui_keyboard_new 7 \"" .. Engine.Localize("MENU_SERVER_BROWSER_FILTER") .. "\"\"" .. UIExpression.DvarString(0, "ui_serverbrowser_searchfilter") .. "\"" .. 256)
 end
 
 CoD.ServerBrowserFilters.FilterChanged = function (self, event)
@@ -45,7 +45,7 @@ LUI.createMenu.ServerBrowserFilters = function ( owner )
 
 	self:addTitle( Engine.Localize( "MENU_FILTER_SERVERS_CAPS" ) )
 
-	self.searchFilter = self.buttonList:addDvarLeftRightSelector( owner, "SEARCH FILTER", "", "Enter text to filter the server list by." ) -- todo localize
+	self.searchFilter = self.buttonList:addDvarLeftRightSelector( owner, Engine.Localize("MENU_SERVER_BROWSER_SEARCH_FILTER_CAPS"), "", Engine.Localize("MENU_SERVER_BROWSER_SEARCH_FILTER_HINT") )
 	self.searchFilter.currentText = self.buttonList:addText("")
 	self.searchFilter:registerEventHandler( "ui_keyboard_input", CoD.ServerBrowserFilters.FilterChanged )
 	self.searchFilter:registerEventHandler( "button_action", CoD.ServerBrowserFilters.OpenFilterEditor )
@@ -53,7 +53,7 @@ LUI.createMenu.ServerBrowserFilters = function ( owner )
 
 	self.buttonList:addText("") -- seperator
 	
-	self.difficultyButton = self.buttonList:addDvarLeftRightSelector( owner, "DISPLAY EMPTY SERVERS", "ui_serverbrowser_searchfilter_emptyservers", "Show empty servers on the server list." ) -- todo localize
+	self.difficultyButton = self.buttonList:addDvarLeftRightSelector( owner, Engine.Localize("MENU_SERVER_BROWSER_DISPLAY_EMPTY_CAPS"), "ui_serverbrowser_searchfilter_emptyservers", Engine.Localize("MENU_SERVER_BROWSER_DISPLAY_EMPTY_HINT") )
 	CoD.GameOptions.Button_AddChoices( owner, self.difficultyButton, { "MENU_NO", "MENU_YES" }, { 0, 1 } )
 
 

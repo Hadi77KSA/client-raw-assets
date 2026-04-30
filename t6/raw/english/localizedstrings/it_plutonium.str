@@ -1,0 +1,271 @@
+VERSION             "1"
+CONFIG              "C:/projects/cod/t6/bin/StringEd.cfg"
+FILENOTES           "Translated from English to Italian. When literal translation feels unnatural, the use of <articoli determinativi> is used to naturalise the flow of the text. Translation type: functional equivalence. NO AI WAS USED. Thanks FutureRave"
+
+// MODS
+
+REFERENCE           MOD_LOAD
+LANG_ENGLISH        "Caricare la Mod?"
+
+REFERENCE           MOD_DESCRIPTION
+LANG_ENGLISH        "Descrizione: &&1"
+
+REFERENCE           MOD_VERSION
+LANG_ENGLISH        "Versione: &&1"
+
+REFERENCE           MOD_NONE_FOR_MODE
+LANG_ENGLISH        "Nessuna Mod(s) trovata per la modalità selezionata.\nAssicurati che il nome della mod contenga il prefisso \"&&1\" per essere trovata."
+// [il nome] addition to the translation
+
+REFERENCE           MENU_UNLOAD
+LANG_ENGLISH        "Rimuovere"
+// Unload ^
+
+// PARTYLOBBY
+
+REFERENCE           MENU_UNLOCK_ALL_CAPS
+LANG_ENGLISH        "SBLOCCA TUTTO"
+
+REFERENCE           MENU_UNLOCK_POPUP
+LANG_ENGLISH        "Sei sicuro di volere sbloccare tutto?"
+
+REFERENCE           MENU_UNLOCK_STATS_BUTTON
+LANG_ENGLISH        "Sblocca tutte le statistiche"
+
+REFERENCE           MENU_RESET_STATS_BUTTON
+LANG_ENGLISH        "Azzera tutte le statistiche"
+
+// OPTIONCONTROLS
+
+REFERENCE           MENU_SLIDER_ARROW_HINT
+LANG_ENGLISH        "Usa i tasti di freccia di sinistra e destra per delle regolazioni più precise."
+
+REFERENCE           MENU_MOUSE_RAW_INPUT_CAPS
+LANG_ENGLISH        "RAW INPUT"
+
+REFERENCE           MENU_MOUSE_RAW_INPUT_HINT
+LANG_ENGLISH        "Abilita Raw Input, per rendere effettive le modifiche, è necessario riavviare il gioco."
+
+REFERENCE           MENU_MOUSE_ACCEL_CAPS
+LANG_ENGLISH        "ACCELERAZIONE MOUSE"
+
+REFERENCE           MENU_MOUSE_FIX_POOLINGRATE_CAPS
+LANG_ENGLISH        "FIX LAG CON FREQUENZA DI POLLING ELEVATA"
+
+REFERENCE           MENU_MOUSE_FIX_POOLINGRATE_HINT
+LANG_ENGLISH        "Riduci il calo di FPS con dispositivi d'input con una frequenza di polling elevata."
+
+REFERENCE           PLATFORM_NEXT_SCORE_STREAK_HINT
+LANG_ENGLISH        "Tasto usato per estrarre l'attrezzatura."
+
+REFERENCE           PLATFORM_PREVIOUS_SCORE_STREAK_HINT
+LANG_ENGLISH        "Tasto usato per estrarre il quadrirotore (Solo su Origins)."
+
+REFERENCE           PLATFORM_ACTIVATE_SCORE_STREAK_HINT
+LANG_ENGLISH        "Tasto usato per estrarre le mine Claymore."
+// WARNING: Claymore should be capitalized in the English source as well
+
+REFERENCE           MENU_TARGET_ASSIST_DISABLED_INGAME
+LANG_ENGLISH        "Target Assist (aimassist del target) è disabilitata su questo server."
+
+REFERENCE           MENU_GPAD_STICK_DEADZONE_MAX_CAPS
+LANG_ENGLISH        "MASSIMO DEADZONE"
+
+REFERENCE           MENU_GPAD_STICK_DEADZONE_MAX_HINT
+LANG_ENGLISH        "Soglia massima di input della levetta."
+// Bro got tired after writing the MIN HINT long description
+
+REFERENCE           MENU_GPAD_STICK_DEADZONE_MIN_CAPS
+LANG_ENGLISH        "MINIMO DEADZONE"
+
+REFERENCE           MENU_GPAD_STICK_DEADZONE_MIN_HINT
+LANG_ENGLISH        "Soglia minima di input della levetta. Una riduzione del valore rende la levetta più suscettibile ai piccoli movimenti."
+// WARNING: the English source swapped the definition for min/max in the REFERENCE
+
+// OPTIONSETTINGS
+
+REFERENCE           PLATFORM_MAX_FPS_DESC
+LANG_ENGLISH        "Imposta il massimo di fotogrammi al secondo. <Sincronizza ogni Fotogrammo> deve essere disabilitato per regolare gli FPS massimi. ^3Qualsiasi valore ^3superiore ai ^1250 ^3risulterà in problemi di movimento del giocatore, problemi nella corsa e il popup di connessione interrottà apparirà sporiadicamente."
+
+REFERENCE           PLATFORM_FOV_SCALE_CAPS
+LANG_ENGLISH        "SCALA FOV"
+
+REFERENCE           PLATFORM_FOV_SCALE_HINT
+LANG_ENGLISH        "Scala applicata alla visione di campo."
+
+REFERENCE           PLATFORM_FOV_SENSITIVITY_CAPS
+LANG_ENGLISH        "SENSIBILITÀ FOV"
+
+REFERENCE           PLATFORM_FOV_SENSITIVITY_HINT
+LANG_ENGLISH        "Quando è abilitato, la tua sensibilità viene ricalcolata in base alla tua fovScale."
+// Missing ending . in English
+
+REFERENCE           MENU_STREAMER_MODE_CAPS
+LANG_ENGLISH        "MODALITÀ STREAMER"
+
+REFERENCE           MENU_STREAMER_MODE_HINT
+LANG_ENGLISH        "Oscura informazioni sensibili del giocatore e network."
+// Why is it "networking" in English?
+
+REFERENCE           MENU_SAFE_AREA_ADJUSTMENT_HINT
+LANG_ENGLISH        "Modifica la zona sicura della HUD."
+
+REFERENCE           MENU_ALLOW_DOWNLOAD_HINT
+LANG_ENGLISH        "Quando è abilitato, permette di scaricare mods dal server."
+
+REFERENCE           MENU_ENGINE_SLEEPS_CAPS
+LANG_ENGLISH        "RIDUCI SOSPENSIONI DEL PROCESSO"
+// Sostituto <engine> per processo. Sarebbe più corretto fare lo stesso in inglese
+
+REFERENCE           MENU_ENGINE_SLEEPS_HINT
+LANG_ENGLISH        "Quando è abilitato, riduce la quantità di sospensioni del processo che il motore di gioco effettua, migliorando gli FPS."
+// Aggiunta: [del processo]
+
+REFERENCE           MENU_IDENTIFIER_CAPS
+LANG_ENGLISH        "MOSTRA IDENTIFICATIVO GIOCO"
+
+REFERENCE           MENU_IDENTIFIER_HINT
+LANG_ENGLISH        "Quando è abilitato, mostra un identificativo univoco sullo schermo."
+
+REFERENCE           MENU_FLASH_HASHES_CAPS
+LANG_ENGLISH        "FLASH AUTOMATICO HASH SCRIPT"
+// Omissione [degli] script
+
+REFERENCE           MENU_FLASH_HASHES_HINT
+LANG_ENGLISH        "Quando è abilitato, mostra gli hash sulla schermo all'inizio della partita."
+
+REFERENCE           MENU_FLASH_HASHES_NOW_CAPS
+LANG_ENGLISH        "MOSTRA GLI HASH DEGLI SCRIPT SUBITO"
+
+REFERENCE           MENU_FLASH_HASHES_NOW_HINT
+LANG_ENGLISH        "Mostra gli hash degli script sullo schermo per un attimo."
+// English source material is perplexing: "Flash" and "now" sound like a repetition in the same phrase. A flash is a flash; you are flashing something <now> [for the duration of a <flash>]. Not repeated in the translation.
+
+// SAFEAREA
+
+REFERENCE           PLATFORM_SAFE_AREA_CONTROLS_LEFT_RIGHT
+LANG_ENGLISH        "Trascina sinistra / destra"
+
+REFERENCE           PLATFORM_SAFE_AREA_CONTROLS_UP_DOWN
+LANG_ENGLISH        "Trascina su / giù"
+
+// SERVERBROWSERFILTERSPOPUP
+
+REFERENCE           MENU_SERVER_BROWSER_CURRENT
+LANG_ENGLISH        "Attuale: &&1"
+
+REFERENCE           MENU_SERVER_BROWSER_FILTER
+LANG_ENGLISH        "Inserisci filtro"
+
+REFERENCE           MENU_SERVER_BROWSER_SEARCH_FILTER_CAPS
+LANG_ENGLISH        "FILTRO RICERCA"
+
+REFERENCE           MENU_SERVER_BROWSER_SEARCH_FILTER_HINT
+LANG_ENGLISH        "Inserisci regola di filtro per la lista server."
+// I'm actually proud because this translation is superior to the source English material
+
+REFERENCE           MENU_SERVER_BROWSER_DISPLAY_EMPTY_CAPS
+LANG_ENGLISH        "MOSTRA SERVER VUOTI"
+
+REFERENCE           MENU_SERVER_BROWSER_DISPLAY_EMPTY_HINT
+LANG_ENGLISH        "Mostra server vuoti sulla lista server."
+
+// SERVERBROWSERSERVERINFO
+
+REFERENCE           SERVERBROWSER_NO_SERVER_SELECTED
+LANG_ENGLISH        "Nessun server selezionato"
+
+REFERENCE           SERVERBROWSER_CONNECT_TO_SERVER_CAPS
+LANG_ENGLISH        "CONNETTITI AL SERVER"
+
+REFERENCE           SERVERBROWSER_CONNECT_TO_SERVER_HINT
+LANG_ENGLISH        "Connettiti al server."
+
+REFERENCE           SERVERBROWSER_HOSTNAME
+LANG_ENGLISH        "HOSTNAME: &&1"
+
+REFERENCE           SERVERBROWSER_MAX_PLAYERS
+LANG_ENGLISH        "MASSIMO GIOCATORI: &&1"
+
+REFERENCE           SERVERBROWSER_MAP_NAME
+LANG_ENGLISH        "NOME MAPPA: &&1"
+
+REFERENCE           SERVERBROWSER_GAMETYPE
+LANG_ENGLISH        "MODALITÀ: &&1"
+
+REFERENCE           SERVERBROWSER_PING
+LANG_ENGLISH        "PING: &&1"
+// OK
+
+REFERENCE           SERVERBROWSER_PLAYERS
+LANG_ENGLISH        "GIOCATORI: &&1"
+
+// LOADING
+
+REFERENCE           MPTIP_PLUTONIUM
+LANG_ENGLISH        "Senza il grande impegno di tutti gli sviluppatori di Plutonium, i giochi che amiamo sarebbero andati perduti nel tempo."
+// Traduzione richiede un po' di fantasia
+
+// PRIVATEGAMELOBBY
+
+REFERENCE           SERVER_CONNECT
+LANG_ENGLISH        "Connettiti al server."
+
+REFERENCE           MENU_TARGET_ASSIST
+LANG_ENGLISH        "Aim Assist"
+// Aim Assist si usa in Italiano.
+
+REFERENCE           MENU_TARGET_ASSIST_HINT
+LANG_ENGLISH        "Permetti l'utilizzo della aim assist per tutti i giocatori con il gamepad."
+// Aim Assist si usa in Italiano. Gamepad è un termine conosciuto per descrivere il <controller> https://it.wikipedia.org/wiki/Gamepad
+
+REFERENCE           MENU_MINPLAYERS_CAPS
+LANG_ENGLISH        "MINIMO GIOCATORI"
+
+REFERENCE           MENU_MINPLAYERS_HINT
+LANG_ENGLISH        "La partita rimarrà sospesa alla schermata di caricamento fino a quando il numero di giocatori sarà raggiunto."
+
+REFERENCE           MENU_CHEATS_CAPS
+LANG_ENGLISH        "TRUCCHI"
+
+REFERENCE           MENU_CHEATS_HINT
+LANG_ENGLISH        "Abilita trucchi sul server."
+
+// THEATERLOBBY
+
+REFERENCE           MENU_THEATER_NAME
+LANG_ENGLISH        "NOME: &&1"
+
+REFERENCE           MENU_THEATER_MISSING_METADATA
+LANG_ENGLISH        "Metadata mancante"
+
+REFERENCE           MENU_THEATER_VERSION
+LANG_ENGLISH        "VERSIONE: &&1"
+
+REFERENCE           MENU_THEATER_DATE
+LANG_ENGLISH        "DATA: &&1"
+
+REFERENCE           MENU_THEATER_HOSTNAME
+LANG_ENGLISH        "HOSTNAME: &&1"
+// hostname: <nome simbolico>. Traduzione letterale non usata (non sensata in questo contesto)
+
+REFERENCE           MENU_THEATER_MAP
+LANG_ENGLISH        "MAPPA: &&1"
+
+REFERENCE           MENU_THEATER_GAMETYPE
+LANG_ENGLISH        "MODALITÀ: &&1"
+
+REFERENCE           MENU_THEATER_LENGTH
+LANG_ENGLISH        "DURATA: &&1"
+
+REFERENCE           MENU_THEATER_INFORMATION_CAPS
+LANG_ENGLISH        "INFORMAZIONI REGISTRAZIONE"
+// It's not easy to translate demo, but in this context, recent Activision support articles have replaced 'demo' with 'registration'.
+
+REFERENCE           MENU_THEATER_DATE_CAPS
+LANG_ENGLISH        "DATA"
+
+REFERENCE           MENU_THEATER_LENGTH_CAPS
+LANG_ENGLISH        "DURATA"
+
+ENDMARKER

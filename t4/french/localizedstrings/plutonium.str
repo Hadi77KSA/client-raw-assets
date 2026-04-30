@@ -1,10 +1,86 @@
-// Dumped from fastfile "fr_plutonium_ui".
-// In their original format the strings might have been separated in multiple files.
 VERSION             "1"
 CONFIG              "C:/projects/cod/t5/bin/StringEd.cfg"
-FILENOTES           ""
+FILENOTES           "Windows 1252 encoded; Thanks Flo203"
 
 REFERENCE           MP_CONNECTED
-LANG_ENGLISH        "&&1 connect�"
+LANG_ENGLISH        "&&1 connecté"
+
+REFERENCE           MENU_PLUTONIUM_FRIENDS_CAPS
+LANG_ENGLISH        "PLUTONIUM AMIS"
+
+REFERENCE           MENU_MINPLAYERS_COLON
+LANG_ENGLISH        "Joueurs Minimum:"
+
+REFERENCE           MENU_NEXT_MAP
+LANG_ENGLISH        "Map Suivante"
+
+REFERENCE           MENU_ROUND
+LANG_ENGLISH        "Manche"
+
+REFERENCE           MENU_ROUND_TIME
+LANG_ENGLISH        "Temps de Manche"
+
+REFERENCE           MENU_DEFAULT_CONTROLLER_LAYOUT
+LANG_ENGLISH        "Configuration de la manette par défaut"
+
+REFERENCE           MENU_SET_TACTICAL_LAYOUT
+LANG_ENGLISH        "Activer configuration Tactique"
+
+REFERENCE           MENU_LOOK_SENSITIVITY
+LANG_ENGLISH        "Sensibilité Vue"
+
+REFERENCE           MENU_INVERT_PITCH
+LANG_ENGLISH        "Caméra inversée"
+
+REFERENCE           MENU_AIM_ASSIST
+LANG_ENGLISH        "Aide à la visée"
+
+REFERENCE           MENU_RUMBLE
+LANG_ENGLISH        "Vibrations"
+
+REFERENCE           MENU_RAW_INPUT
+LANG_ENGLISH        "Entrée brute"
+
+REFERENCE           MENU_APPLY_RESTART_GAME
+LANG_ENGLISH        "Ce paramètre sera appliqué après le redémarrage du jeu."
+
+REFERENCE           MENU_MOUSE_ACCEL
+LANG_ENGLISH        "Accélération de la souris"
+
+REFERENCE           MENU_MOUSE_FIX_POOLINGRATE
+LANG_ENGLISH        "Fix high poll rate lag"
+
+REFERENCE           MENU_NO_BORDER
+LANG_ENGLISH        "Sans bordures"
+
+REFERENCE           MENU_FIELD_OF_VIEW
+LANG_ENGLISH        "Champ de vision"
+
+REFERENCE           MENU_FIELD_OF_VIEW_SCALE
+LANG_ENGLISH        "Distance du Champ de vision"
+
+REFERENCE           MENU_MAXFPS
+LANG_ENGLISH        "FPS Max"
+
+REFERENCE           MENU_STREAMER_MODE
+LANG_ENGLISH        "Mode Streamer"
+
+REFERENCE           MENU_ENGINE_SLEEPS
+LANG_ENGLISH        "Réduction engine sleeps"
+
+REFERENCE           MENU_AUTORECORDCLIENTSIDEDEMOS
+LANG_ENGLISH        "Enregistrement automatique des démos sur le client"
+
+REFERENCE           MENU_AUTORECORDSERVERSIDEDEMOS
+LANG_ENGLISH        "Enregistrement automatique des démos sur le serveur"
+
+REFERENCE           MENU_IDENTIFIER
+LANG_ENGLISH        "Affichage d'identification de jeu"
+
+REFERENCE           MENU_FLASH_HASHES
+LANG_ENGLISH        "Auto flash script hashes"
+
+REFERENCE           MENU_FLASH_HASHES_NOW
+LANG_ENGLISH        "Flash script hashes maintenant"
 
 ENDMARKER

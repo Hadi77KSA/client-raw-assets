@@ -39,7 +39,7 @@
 			type			ITEM_TYPE_TEXT
 			origin			ORIGIN_MENU_TREE
 			forecolor		TREE_COLOR
-			text			"LEADERBOARDS" // todo localize
+			text			"@MENU_LEADERBOARDS_CAP"
 			textfont		UI_FONT_NORMAL
 			textscale		TEXTSIZE_DEFAULT
 			visible 		1
@@ -60,7 +60,7 @@
 		// --------------------------- buttons ----------------------------
 		itemDef 
 		{
-      		text		"Next map" // todo localize
+      		text		"@PLUTONIUM_MENU_NEXT_MAP"
 					type		ITEM_TYPE_BUTTON
       		textscale	0.25
 					textstyle	ITEM_TEXTSTYLE_SHADOWED
@@ -165,7 +165,7 @@
 		{
 			name rank
 			group grpTabs
-			text "Rank" // todo localize
+			text "@MPUI_RANK_PRE"
 			type ITEM_TYPE_BUTTON
 			textscale 0.25
 			textfont	UI_FONT_NORMAL
@@ -208,7 +208,7 @@
 		{
 			name player
 			group grpTabs
-			text "Player name" // todo localize
+			text "@MENU_PLAYER_NAME"
 			type ITEM_TYPE_BUTTON
 			textscale 0.25
 			textfont	UI_FONT_NORMAL
@@ -251,7 +251,7 @@
 		{
 			name round
 			group grpTabs
-			text "Round" // todo localize
+			text "@PLUTONIUM_MENU_ROUND"
 			type ITEM_TYPE_BUTTON
 			textscale 0.25
 			textfont	UI_FONT_NORMAL
@@ -339,7 +339,7 @@
 		{
 			name time
 			group grpTabs
-			text "Round time" // todo localize
+			text "@PLUTONIUM_MENU_ROUND_TIME"
 			type ITEM_TYPE_BUTTON
 			textscale 0.25
 			textfont	UI_FONT_NORMAL
@@ -383,7 +383,7 @@
 		{
 			name score
 			group grpTabs
-			text "Score" // todo localize
+			text "@MPUI_SCORE_PRE"
 			type ITEM_TYPE_BUTTON
 			textscale 0.25
 			textfont	UI_FONT_NORMAL
@@ -427,7 +427,7 @@
 		{
 			name kills
 			group grpTabs
-			text "Kills" // todo localize
+			text "@MPUI_KILLS_PRE"
 			type ITEM_TYPE_BUTTON
 			textscale 0.25
 			textfont	UI_FONT_NORMAL

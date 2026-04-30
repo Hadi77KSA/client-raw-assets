@@ -59,7 +59,7 @@ LUI.createMenu.LoadModModal = function( controller )
 	self.m_ownerController = controller
 
 	self:addBackButton()
-	self:addTitle( "Load Mod?" ) -- todo localize
+	self:addTitle( Engine.Localize( "MOD_LOAD" ) )
 
 	self.buttonList = CoD.ButtonList.new( {
 		leftAnchor = true,
@@ -72,7 +72,7 @@ LUI.createMenu.LoadModModal = function( controller )
 		bottom = 0
 	} )
 
-	self.yesButton = self.buttonList:addButton( Engine.Localize( "YES" ) )
+	self.yesButton = self.buttonList:addButton( Engine.Localize( "MENU_YES_CAPS" ) )
 	self.yesButton:registerEventHandler( "button_action", CoD.Mods.LoadMod )
 
 	self:addElement( self.buttonList )
@@ -137,8 +137,8 @@ CoD.Mods.ModListFocusChangedEventHandler = function( self, event )
 	if modInfo ~= nil then
 		self.modInfo.title:setText( modInfo.name )
 		self.modInfo.author:setText( Engine.Localize("MENU_FILESHARE_AUTHOR") .. " " .. modInfo.author )
-		self.modInfo.description:setText( "Description: " .. modInfo.description ) -- todo localize
-		self.modInfo.version:setText( "Version: " .. modInfo.version ) -- todo localize
+		self.modInfo.description:setText( Engine.Localize( "MOD_DESCRIPTION", modInfo.description ) )
+		self.modInfo.version:setText( Engine.Localize( "MOD_VERSION", modInfo.version ) )
 	end
 end
 
@@ -194,7 +194,7 @@ LUI.createMenu.Mods = function( controller )
 	listBox:setLeftRight( true, false, 0, 500 )
 	listBox:setTopBottom( true, false, 75, 75 + 530 )
 	listBox:addScrollBar( 530 + (8 * 12), 2 )
-	listBox.noDataText = "No mods found for the current mode.\nMake sure mod is prefixed with \"" .. CoD.Mods.ModPrefix .. "\" to be found." -- todo localize
+	listBox.noDataText = Engine.Localize( "MOD_NONE_FOR_MODE", CoD.Mods.ModPrefix )
 	self:addElement( listBox )
 	self.listBox = listBox
 
@@ -205,7 +205,7 @@ LUI.createMenu.Mods = function( controller )
 	self.modInfo = modInfo
 
 	self.backButton = CoD.ButtonPrompt.new( "secondary", Engine.Localize( "MENU_BACK" ), self, "button_prompt_back" )
-	self.unloadButton = CoD.ButtonPrompt.new( "alt1", "Unload", self, "button_prompt_unload", false, nil, false, nil, "U" )
+	self.unloadButton = CoD.ButtonPrompt.new( "alt1", Engine.Localize( "MENU_UNLOAD" ), self, "button_prompt_unload", false, nil, false, nil, "U" )
 	self.refreshButton = CoD.ButtonPrompt.new( "alt2", Engine.Localize( "MENU_REFRESH" ), self, "button_prompt_refresh", false, nil, false, nil, "R" )
 
 	self:registerEventHandler( "button_prompt_back", CoD.Mods.ModListBackEventHandler )

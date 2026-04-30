@@ -152,7 +152,7 @@
 
 #define CHOICE_TAB_TEXTSIZE				TEXTSIZE_SMALL
 #define TAB_1_TEXT						(locString( "@MPUI_MAPS_CAPS" ))
-#define TAB_2_TEXT						("CUSTOM MAPS") // todo localize
+#define TAB_2_TEXT						(locString( "@PLUTONIUM_MENU_CUSTOMMAPS_CAPS" ))
 
 #define TAB_BG_PAD						5
 #define TAB_1_WIDTH						( getTextWidth( TAB_1_TEXT, CHOICE_TEXTFONT, TEXTSIZE_SMALL ) + (TAB_BG_PAD*2) )
@@ -422,7 +422,7 @@
 		MAP_SELECT_DISPLAY( "@" + MAP_NAME, MAP_IMAGE, "@" + MAP_DESC, dvarBool( ui_showDLCMaps ) && getFeederCount( map_selection ) > 0 )
 
 		PREPROC_TEXT_DRAW_ALL(	(-640 / 2) (-480 / 2) 640 480 HORIZONTAL_ALIGN_CENTER VERTICAL_ALIGN_CENTER, 0 0,
-								"You have no custom maps.", // todo localize
+								"@PLUTONIUM_MENU_NOCUSTOMMAPS",
 								TEXTSIZE_TITLE, 0, 0, ITEM_ALIGN_MIDDLE_CENTER, 1 1 1 1, UI_FONT_EXTRABIG, ITEM_TEXTSTYLE_NORMAL,
 								when( dvarBool( ui_showDLCMaps ) && getFeederCount( map_selection ) <= 0 );, ; )
 

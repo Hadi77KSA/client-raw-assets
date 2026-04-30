@@ -1,0 +1,253 @@
+VERSION             "1"
+CONFIG              "C:/projects/cod/t6/bin/StringEd.cfg"
+FILENOTES           "Deepseek translated... Sorry..."
+
+// MODS
+
+REFERENCE           MOD_LOAD
+LANG_ENGLISH        "Modを読み込みますか？"
+
+REFERENCE           MOD_DESCRIPTION
+LANG_ENGLISH        "説明: &&1"
+
+REFERENCE           MOD_VERSION
+LANG_ENGLISH        "バージョン: &&1"
+
+REFERENCE           MOD_NONE_FOR_MODE
+LANG_ENGLISH        "現在のモードに対応するModが見つかりません。\n見つけるにはModのプレフィックスを \"&&1\" にしてください。"
+
+REFERENCE           MENU_UNLOAD
+LANG_ENGLISH        "アンロード"
+
+// PARTYLOBBY
+
+REFERENCE           MENU_UNLOCK_ALL_CAPS
+LANG_ENGLISH        "すべてアンロック"
+
+REFERENCE           MENU_UNLOCK_POPUP
+LANG_ENGLISH        "本当にすべてをアンロックしますか？"
+
+REFERENCE           MENU_UNLOCK_STATS_BUTTON
+LANG_ENGLISH        "すべての統計をアンロック"
+
+REFERENCE           MENU_RESET_STATS_BUTTON
+LANG_ENGLISH        "すべての統計をリセット"
+
+// OPTIONCONTROLS
+
+REFERENCE           MENU_SLIDER_ARROW_HINT
+LANG_ENGLISH        "左右の矢印キーを使って微調整ができます。"
+
+REFERENCE           MENU_MOUSE_RAW_INPUT_CAPS
+LANG_ENGLISH        "生の入力"
+
+REFERENCE           MENU_MOUSE_RAW_INPUT_HINT
+LANG_ENGLISH        "生の入力を有効にします。変更を反映するにはゲームの再起動が必要です。"
+
+REFERENCE           MENU_MOUSE_ACCEL_CAPS
+LANG_ENGLISH        "マウス加速"
+
+REFERENCE           MENU_MOUSE_FIX_POOLINGRATE_CAPS
+LANG_ENGLISH        "高ポーリングレートによるラグを修正"
+
+REFERENCE           MENU_MOUSE_FIX_POOLINGRATE_HINT
+LANG_ENGLISH        "高ポーリングレートの入力デバイスでのFPS低下を軽減します。"
+
+REFERENCE           PLATFORM_NEXT_SCORE_STREAK_HINT
+LANG_ENGLISH        "装備を取り出すキー。"
+
+REFERENCE           PLATFORM_PREVIOUS_SCORE_STREAK_HINT
+LANG_ENGLISH        "クアドロローターを取り出すキー（オリジンズのみ）。"
+
+REFERENCE           PLATFORM_ACTIVATE_SCORE_STREAK_HINT
+LANG_ENGLISH        "クレイモアを取り出すキー。"
+
+REFERENCE           MENU_TARGET_ASSIST_DISABLED_INGAME
+LANG_ENGLISH        "このサーバーではターゲットアシストが無効になっています。"
+
+REFERENCE           MENU_GPAD_STICK_DEADZONE_MAX_CAPS
+LANG_ENGLISH        "デッドゾーン最大"
+
+REFERENCE           MENU_GPAD_STICK_DEADZONE_MAX_HINT
+LANG_ENGLISH        "スティックの最大入力しきい値。"
+
+REFERENCE           MENU_GPAD_STICK_DEADZONE_MIN_CAPS
+LANG_ENGLISH        "デッドゾーン最小"
+
+REFERENCE           MENU_GPAD_STICK_DEADZONE_MIN_HINT
+LANG_ENGLISH        "スティックの最小入力しきい値。値を小さくすると、わずかな動きに対してスティックがより敏感になります。"
+
+// OPTIONSETTINGS
+
+REFERENCE           PLATFORM_MAX_FPS_DESC
+LANG_ENGLISH        "最大フレームレート（FPS）を設定します。「Sync Every Frame」を無効にする必要があります。^3なお、^3^1250^3を超える値を設定すると、動作問題、ダッシュ問題、接続切れポップアップのちらつきが発生します。"
+
+REFERENCE           PLATFORM_FOV_SCALE_CAPS
+LANG_ENGLISH        "FOVスケール"
+
+REFERENCE           PLATFORM_FOV_SCALE_HINT
+LANG_ENGLISH        "視野角（FOV）に適用される倍率。"
+
+REFERENCE           PLATFORM_FOV_SENSITIVITY_CAPS
+LANG_ENGLISH        "FOV感度"
+
+REFERENCE           PLATFORM_FOV_SENSITIVITY_HINT
+LANG_ENGLISH        "有効にすると、fovScaleに基づいて感度が調整されます。"
+
+REFERENCE           MENU_STREAMER_MODE_CAPS
+LANG_ENGLISH        "ストリーマーモード"
+
+REFERENCE           MENU_STREAMER_MODE_HINT
+LANG_ENGLISH        "重要なネットワーク情報やプレイヤー情報を隠します。"
+
+REFERENCE           MENU_SAFE_AREA_ADJUSTMENT_HINT
+LANG_ENGLISH        "HUDのセーフエリアを編集します。"
+
+REFERENCE           MENU_ALLOW_DOWNLOAD_HINT
+LANG_ENGLISH        "有効にすると、サーバーからのModダウンロードを許可します。"
+
+REFERENCE           MENU_ENGINE_SLEEPS_CAPS
+LANG_ENGLISH        "エンジンのスリープを減らす"
+
+REFERENCE           MENU_ENGINE_SLEEPS_HINT
+LANG_ENGLISH        "有効にすると、エンジンが行うスリープを減らしてFPSを向上させます。"
+
+REFERENCE           MENU_IDENTIFIER_CAPS
+LANG_ENGLISH        "ゲーム識別子を表示"
+
+REFERENCE           MENU_IDENTIFIER_HINT
+LANG_ENGLISH        "有効にすると、画面上に一意の識別子を表示します。"
+
+REFERENCE           MENU_FLASH_HASHES_CAPS
+LANG_ENGLISH        "スクリプトハッシュを自動フラッシュ"
+
+REFERENCE           MENU_FLASH_HASHES_HINT
+LANG_ENGLISH        "有効にすると、ゲーム開始時にハッシュを画面上にフラッシュ表示します。"
+
+REFERENCE           MENU_FLASH_HASHES_NOW_CAPS
+LANG_ENGLISH        "スクリプトハッシュを今すぐフラッシュ"
+
+REFERENCE           MENU_FLASH_HASHES_NOW_HINT
+LANG_ENGLISH        "スクリプトのハッシュを今すぐ画面上にフラッシュ表示します。"
+
+// SAFEAREA
+
+REFERENCE           PLATFORM_SAFE_AREA_CONTROLS_LEFT_RIGHT
+LANG_ENGLISH        "左右にドラッグ"
+
+REFERENCE           PLATFORM_SAFE_AREA_CONTROLS_UP_DOWN
+LANG_ENGLISH        "上下にドラッグ"
+
+// SERVERBROWSERFILTERSPOPUP
+
+REFERENCE           MENU_SERVER_BROWSER_CURRENT
+LANG_ENGLISH        "現在: &&1"
+
+REFERENCE           MENU_SERVER_BROWSER_FILTER
+LANG_ENGLISH        "フィルターを入力"
+
+REFERENCE           MENU_SERVER_BROWSER_SEARCH_FILTER_CAPS
+LANG_ENGLISH        "検索フィルター"
+
+REFERENCE           MENU_SERVER_BROWSER_SEARCH_FILTER_HINT
+LANG_ENGLISH        "サーバーリストをフィルタリングするテキストを入力します。"
+
+REFERENCE           MENU_SERVER_BROWSER_DISPLAY_EMPTY_CAPS
+LANG_ENGLISH        "空のサーバーを表示"
+
+REFERENCE           MENU_SERVER_BROWSER_DISPLAY_EMPTY_HINT
+LANG_ENGLISH        "サーバーリストに空のサーバーを表示します。"
+
+// SERVERBROWSERSERVERINFO
+
+REFERENCE           SERVERBROWSER_NO_SERVER_SELECTED
+LANG_ENGLISH        "サーバーが選択されていません"
+
+REFERENCE           SERVERBROWSER_CONNECT_TO_SERVER_CAPS
+LANG_ENGLISH        "サーバーに接続"
+
+REFERENCE           SERVERBROWSER_CONNECT_TO_SERVER_HINT
+LANG_ENGLISH        "サーバーに接続します。"
+
+REFERENCE           SERVERBROWSER_HOSTNAME
+LANG_ENGLISH        "ホスト名: &&1"
+
+REFERENCE           SERVERBROWSER_MAX_PLAYERS
+LANG_ENGLISH        "最大プレイヤー数: &&1"
+
+REFERENCE           SERVERBROWSER_MAP_NAME
+LANG_ENGLISH        "マップ名: &&1"
+
+REFERENCE           SERVERBROWSER_GAMETYPE
+LANG_ENGLISH        "ゲームタイプ: &&1"
+
+REFERENCE           SERVERBROWSER_PING
+LANG_ENGLISH        "Ping: &&1"
+
+REFERENCE           SERVERBROWSER_PLAYERS
+LANG_ENGLISH        "プレイヤー: &&1"
+
+// LOADING
+
+REFERENCE           MPTIP_PLUTONIUM
+LANG_ENGLISH        "Plutonium開発者たちのたゆまぬ努力がなければ、私たちの愛するゲームはとっくに廃れていたでしょう。"
+
+// PRIVATEGAMELOBBY
+
+REFERENCE           SERVER_CONNECT
+LANG_ENGLISH        "サーバーに接続します。"
+
+REFERENCE           MENU_TARGET_ASSIST
+LANG_ENGLISH        "エイムアシスト"
+
+REFERENCE           MENU_TARGET_ASSIST_HINT
+LANG_ENGLISH        "すべてのコントローラープレイヤーにエイムアシストオプションを許可します。"
+
+REFERENCE           MENU_MINPLAYERS_CAPS
+LANG_ENGLISH        "最小プレイヤー数"
+
+REFERENCE           MENU_MINPLAYERS_HINT
+LANG_ENGLISH        "ゲームはロード画面で、指定された人数のプレイヤーが集まるまで待機します。"
+
+REFERENCE           MENU_CHEATS_CAPS
+LANG_ENGLISH        "チート"
+
+REFERENCE           MENU_CHEATS_HINT
+LANG_ENGLISH        "サーバーでチートを有効にします。"
+
+// THEATERLOBBY
+
+REFERENCE           MENU_THEATER_NAME
+LANG_ENGLISH        "名前: &&1"
+
+REFERENCE           MENU_THEATER_MISSING_METADATA
+LANG_ENGLISH        "メタデータがありません"
+
+REFERENCE           MENU_THEATER_VERSION
+LANG_ENGLISH        "バージョン: &&1"
+
+REFERENCE           MENU_THEATER_DATE
+LANG_ENGLISH        "日付: &&1"
+
+REFERENCE           MENU_THEATER_HOSTNAME
+LANG_ENGLISH        "ホスト名: &&1"
+
+REFERENCE           MENU_THEATER_MAP
+LANG_ENGLISH        "マップ: &&1"
+
+REFERENCE           MENU_THEATER_GAMETYPE
+LANG_ENGLISH        "ゲームタイプ: &&1"
+
+REFERENCE           MENU_THEATER_LENGTH
+LANG_ENGLISH        "長さ: &&1"
+
+REFERENCE           MENU_THEATER_INFORMATION_CAPS
+LANG_ENGLISH        "デモ情報"
+
+REFERENCE           MENU_THEATER_DATE_CAPS
+LANG_ENGLISH        "日付"
+
+REFERENCE           MENU_THEATER_LENGTH_CAPS
+LANG_ENGLISH        "長さ"
+
+ENDMARKER

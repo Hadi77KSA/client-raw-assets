@@ -1,0 +1,7 @@
+menufile,ui/menus_plutonium_ingame.txt
+
+menufile,ui_mp/scriptmenus/options_game_pc_ingame_.menu
+menufile,ui_mp/scriptmenus/options_graphics_pc_ingame_.menu
+menufile,ui_mp/scriptmenus/options_multi_ingame_.menu
+menufile,ui_mp/scriptmenus/options_look_pc_ingame_.menu
+menufile,ui_mp/scriptmenus/options_misc_pc_ingame_.menu

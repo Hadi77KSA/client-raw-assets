@@ -2,6 +2,9 @@ menufile,ui_mp/menus_plutonium.txt
 
 menufile,ui_mp/main_.menu
 menufile,ui_mp/createserver_.menu
+
 menufile,ui/options_game_pc_.menu
 menufile,ui/options_graphics_pc_.menu
 menufile,ui_mp/options_multi_.menu
+menufile,ui/options_look_pc_.menu
+menufile,ui/options_misc_pc_.menu

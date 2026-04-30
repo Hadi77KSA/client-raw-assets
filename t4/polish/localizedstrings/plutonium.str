@@ -1,10 +1,86 @@
-// Dumped from fastfile "po_plutonium_ui".
-// In their original format the strings might have been separated in multiple files.
 VERSION             "1"
 CONFIG              "C:/projects/cod/t5/bin/StringEd.cfg"
-FILENOTES           ""
+FILENOTES           "Windows 1250 encoded; Thanks Ziomix"
 
 REFERENCE           MP_CONNECTED
-LANG_ENGLISH        "&&1 pod��czony"
+LANG_ENGLISH        "&&1 podłączony"
+
+REFERENCE           MENU_PLUTONIUM_FRIENDS_CAPS
+LANG_ENGLISH        "Przyjaciele Plutonium"
+
+REFERENCE           MENU_MINPLAYERS_COLON
+LANG_ENGLISH        "Minimum Graczy:"
+
+REFERENCE           MENU_NEXT_MAP
+LANG_ENGLISH        "Następna Mapa"
+
+REFERENCE           MENU_ROUND
+LANG_ENGLISH        "Runda"
+
+REFERENCE           MENU_ROUND_TIME
+LANG_ENGLISH        "Czas Rundy"
+
+REFERENCE           MENU_DEFAULT_CONTROLLER_LAYOUT
+LANG_ENGLISH        "Domyślny Układ Gamepada"
+
+REFERENCE           MENU_SET_TACTICAL_LAYOUT
+LANG_ENGLISH        "Włącz Taktyczny Układ"
+
+REFERENCE           MENU_LOOK_SENSITIVITY
+LANG_ENGLISH        "Czułość Kamery"
+
+REFERENCE           MENU_INVERT_PITCH
+LANG_ENGLISH        "Odwróć Oś Pionową"
+
+REFERENCE           MENU_AIM_ASSIST
+LANG_ENGLISH        "Asysta Celowania"
+
+REFERENCE           MENU_RUMBLE
+LANG_ENGLISH        "Wibracje Gamepada"
+
+REFERENCE           MENU_RAW_INPUT
+LANG_ENGLISH        "Surowe Dane Wejściowe"
+
+REFERENCE           MENU_APPLY_RESTART_GAME
+LANG_ENGLISH        "Opcja zostanie zastosowana po pełnym restarcie gry."
+
+REFERENCE           MENU_MOUSE_ACCEL
+LANG_ENGLISH        "Akceleracja Myszy"
+
+REFERENCE           MENU_MOUSE_FIX_POOLINGRATE
+LANG_ENGLISH        "Poprawka Dla Wys. Pooling Rate"
+
+REFERENCE           MENU_NO_BORDER
+LANG_ENGLISH        "Bez Ramek"
+
+REFERENCE           MENU_FIELD_OF_VIEW
+LANG_ENGLISH        "Pole Widzenia"
+
+REFERENCE           MENU_FIELD_OF_VIEW_SCALE
+LANG_ENGLISH        "Skala FOV"
+
+REFERENCE           MENU_MAXFPS
+LANG_ENGLISH        "Maks. Liczba Klatek Na Sekundę"
+
+REFERENCE           MENU_STREAMER_MODE
+LANG_ENGLISH        "Tryb Streamera"
+
+REFERENCE           MENU_ENGINE_SLEEPS
+LANG_ENGLISH        "Ograniczenie Opóźnień Silnika"
+
+REFERENCE           MENU_AUTORECORDCLIENTSIDEDEMOS
+LANG_ENGLISH        "Nagrywanie Powtórek Klienta"
+
+REFERENCE           MENU_AUTORECORDSERVERSIDEDEMOS
+LANG_ENGLISH        "Nagrywanie Powtórek Serwera"
+
+REFERENCE           MENU_IDENTIFIER
+LANG_ENGLISH        "Wyświetlanie Identyfikatora Gry"
+
+REFERENCE           MENU_FLASH_HASHES
+LANG_ENGLISH        "Pokazywanie Hashy Skryptów"
+
+REFERENCE           MENU_FLASH_HASHES_NOW
+LANG_ENGLISH        "Wyświetl Hashe Skryptów"
 
 ENDMARKER

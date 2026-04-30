@@ -1,3 +1,11 @@
+menufile,ui_mp/menus_plutonium_ingame.txt
+
+menufile,ui_mp/scriptmenus/options_game_pc_ingame_.menu
+menufile,ui_mp/scriptmenus/options_graphics_pc_ingame_.menu
+menufile,ui_mp/scriptmenus/options_multi_ingame_.menu
+menufile,ui_mp/scriptmenus/options_look_pc_ingame_.menu
+menufile,ui_mp/scriptmenus/options_misc_pc_ingame_.menu
+
 rawfile,rumble/artillery_rumble
 rawfile,rumble/artillery_rumble_h.rmb
 rawfile,rumble/artillery_rumble_l.rmb

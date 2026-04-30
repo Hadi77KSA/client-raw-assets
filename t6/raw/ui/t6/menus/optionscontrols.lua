@@ -140,10 +140,20 @@ CoD.OptionsControls.CreateLookTab = function (lookTab, localClientIndex)
 	lookTabButtonList:addSpacer(CoD.CoD9Button.Height / 2)
 	CoD.OptionsControls.Button_AddChoices_InvertMouse(lookTabButtonList:addDvarLeftRightSelector(localClientIndex, Engine.Localize("MENU_INVERT_MOUSE_CAPS"), "m_pitch"), localClientIndex)
 	CoD.OptionsControls.Button_AddChoices_YesOrNo(lookTabButtonList:addDvarLeftRightSelector(localClientIndex, Engine.Localize("MENU_FREE_LOOK_CAPS"), "cl_freelook"), localClientIndex)
-	local MouseSensitivityOptions = lookTabButtonList:addProfileLeftRightSlider(localClientIndex, Engine.Localize("MENU_MOUSE_SENSITIVITY_CAPS"), "mouseSensitivity", 0.01, 30, "Use the left and right arrow keys for more precise adjustments.", nil, nil, CoD.Options.AdjustSFX) -- todo localize
+	local MouseSensitivityOptions = lookTabButtonList:addProfileLeftRightSlider(localClientIndex, Engine.Localize("MENU_MOUSE_SENSITIVITY_CAPS"), "mouseSensitivity", 0.01, 30, Engine.Localize("MENU_SLIDER_ARROW_HINT"), nil, nil, CoD.Options.AdjustSFX)
 	MouseSensitivityOptions:setNumericDisplayFormatString("%.2f")
 	MouseSensitivityOptions:setRoundToFraction(0.5)
 	MouseSensitivityOptions:setBarSpeed(0.01)
+
+	CoD.OptionsControls.Button_AddChoices_YesOrNo(lookTabButtonList:addDvarLeftRightSelector(localClientIndex, Engine.Localize("MENU_MOUSE_RAW_INPUT_CAPS"), "raw_input", Engine.Localize("MENU_MOUSE_RAW_INPUT_HINT")), localClientIndex)
+
+	local mouseAccelOptions = lookTabButtonList:addDvarLeftRightSlider(localClientIndex, Engine.Localize("MENU_MOUSE_ACCEL_CAPS"), "cl_mouseAccel", 0, 2, Engine.Localize("MENU_SLIDER_ARROW_HINT"), nil, nil, CoD.Options.AdjustSFX)
+	mouseAccelOptions:setNumericDisplayFormatString("%.2f")
+	mouseAccelOptions:setRoundToFraction(0.01)
+	mouseAccelOptions:setBarSpeed(0.01)
+
+	CoD.OptionsControls.Button_AddChoices_YesOrNo(lookTabButtonList:addDvarLeftRightSelector(localClientIndex, Engine.Localize("MENU_MOUSE_FIX_POOLINGRATE_CAPS"), "fix_mouse_lag", Engine.Localize("MENU_MOUSE_FIX_POOLINGRATE_HINT")), localClientIndex)
+
 	return lookTabContainer
 end
 
@@ -295,17 +305,17 @@ CoD.OptionsControls.CreateInteractTab = function (interactTab, localClientIndex)
 			{
 				command = "+actionslot 1",
 				label = "PLATFORM_NEXT_SCORE_STREAK_CAPS",
-				hint = "Key used to take equipment out." -- todo localize
+				hint = Engine.Localize("PLATFORM_NEXT_SCORE_STREAK_HINT")
 			},
 			{
 				command = "+actionslot 2",
 				label = "PLATFORM_PREVIOUS_SCORE_STREAK_CAPS",
-				hint = "Key used to take out the quadrorotor(Origins only)." -- todo localize
+				hint = Engine.Localize("PLATFORM_PREVIOUS_SCORE_STREAK_HINT")
 			},
 			{
 				command = "+actionslot 4",
 				label = "PLATFORM_ACTIVATE_SCORE_STREAK_CAPS",
-				hint = "Key used to take claymores out." -- todo localize
+				hint = Engine.Localize("PLATFORM_ACTIVATE_SCORE_STREAK_HINT")
 			},
 			{
 				command = "break"
@@ -387,7 +397,7 @@ CoD.OptionsControls.CreateGamepadTab = function (gamepadTab, localClientIndex)
 	gamepadButtonListContainer:addElement(gamepadButtonList)
 	CoD.OptionsControls.Button_AddChoices_Gamepad(gamepadButtonList:addHardwareProfileLeftRightSelector(Engine.Localize("PLATFORM_ENABLE_GAMEPAD_CAPS"), "gpad_enabled"))
 	if UIExpression.IsInGame() == 1 and UIExpression.DvarBool(nil, "sv_allowAimAssist") == 0 then
-		local targetAssistSelector = gamepadButtonList:addProfileLeftRightSelector(localClientIndex, Engine.Localize("MENU_TARGET_ASSIST_CAPS"), "somethingalwaysfalse", "Target Assist is disabled on this server.") -- todo localize
+		local targetAssistSelector = gamepadButtonList:addProfileLeftRightSelector(localClientIndex, Engine.Localize("MENU_TARGET_ASSIST_CAPS"), "somethingalwaysfalse", Engine.Localize("MENU_TARGET_ASSIST_DISABLED_INGAME"))
 		targetAssistSelector:lock()
 		CoD.Options.Button_AddChoices_EnabledOrDisabled(targetAssistSelector)
 	else
@@ -412,11 +422,11 @@ CoD.OptionsControls.CreateGamepadTab = function (gamepadTab, localClientIndex)
 		gamepadButtonsOptions:registerEventHandler("button_action", CoD.OptionsControls.Button_ButtonLayout)
 	end
 	CoD.OptionsControls.Button_AddChoices_LookSensitivity(gamepadButtonList:addProfileLeftRightSelector(localClientIndex, Engine.Localize("MENU_LOOK_SENSITIVITY_CAPS"), "input_viewSensitivity", Engine.Localize("PLATFORM_LOOK_SENSITIVITY_DESC")))
-	local GamepadDeadzoneMin = gamepadButtonList:addDvarLeftRightSlider(localClientIndex, "DEADZONE MAX", "gpad_stick_deadzone_max", 0.01, 1, "Stick maximum input threshold.")-- todo localize
+	local GamepadDeadzoneMin = gamepadButtonList:addDvarLeftRightSlider(localClientIndex, Engine.Localize("MENU_GPAD_STICK_DEADZONE_MAX_CAPS"), "gpad_stick_deadzone_max", 0.01, 1, Engine.Localize("MENU_GPAD_STICK_DEADZONE_MAX_HINT"))
 	GamepadDeadzoneMin:setNumericDisplayFormatString("%.2f")
 	GamepadDeadzoneMin:setRoundToFraction(0.01)
 	GamepadDeadzoneMin:setBarSpeed(0.20)
-	local FOVScaleSlider = gamepadButtonList:addDvarLeftRightSlider(localClientIndex, "DEADZONE MIN", "gpad_stick_deadzone_min", 0.2, 1, "Stick minimum input threshold. Lower values make the sticks more responsive to tiny movements.")-- todo localize
+	local FOVScaleSlider = gamepadButtonList:addDvarLeftRightSlider(localClientIndex, Engine.Localize("MENU_GPAD_STICK_DEADZONE_MIN_CAPS"), "gpad_stick_deadzone_min", 0.2, 1, Engine.Localize("MENU_GPAD_STICK_DEADZONE_MIN_HINT"))
 	FOVScaleSlider:setNumericDisplayFormatString("%.2f")
 	FOVScaleSlider:setRoundToFraction(0.01)
 	FOVScaleSlider:setBarSpeed(0.20)

@@ -128,7 +128,7 @@
 	
 		CHOICE_SEPARATOR_VIS( CHOICE_SEP_2, when( !localvarBool( ui_hideBack ) ) )
 		
-		CHOICE_BUTTON_VIS( 7, "PLUTONIUM FRIENDS", uiScript plutoniumFriends;, when( !localvarBool( ui_hideBack ) ); )
+		CHOICE_BUTTON_VIS( 7, "@PLUTONIUM_MENU_PLUTONIUM_FRIENDS_CAPS", uiScript plutoniumFriends;, when( !localvarBool( ui_hideBack ) ); )
 		CHOICE_BUTTON_VIS( 8, "@MENU_SELECT_ONLINE_PROFILE", execOnDvarIntValue dw_loggedin 0 "dwconnect"; setdvar ui_playerProfileAlreadyChosen 0; open player_profile, when( !localvarBool( ui_hideBack ) ); )
 		CHOICE_BUTTON_VIS( 9, "@MENU_FRIENDS_CAP", open menu_pc_friends;, when( !localvarBool( ui_hideBack ) ); )
 		CHOICE_NEWICON_VIS( 9, "specialty_new", when( hasinvites() || haspendingfriends() ); )

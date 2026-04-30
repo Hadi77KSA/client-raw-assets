@@ -8,9 +8,9 @@ end
 
 local GameOptionsDvars = {
 	allowAimAssist = {
-		name = "Aim Assist", -- todo localize
+		name = Engine.Localize("MENU_TARGET_ASSIST"),
 		setting = "sv_allowAimAssist",
-		hintText = "Allow aim assist option for all controller players.", -- todo localize
+		hintText = Engine.Localize("MENU_TARGET_ASSIST_HINT"),
 		labels = CoD.GameOptions.AllowedDisallowedLabels,
 		values = CoD.GameOptions.AllowedDisallowedValues,
 		shouldShow = AlwaysShow

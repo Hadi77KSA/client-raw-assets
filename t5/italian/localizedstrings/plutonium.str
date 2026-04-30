@@ -1,0 +1,68 @@
+VERSION             "1"
+CONFIG              "C:/projects/cod/t5/bin/StringEd.cfg"
+FILENOTES           "Windows 1252 encoded; Translated from English to Italian. When literal translation feels unnatural, the use of <articoli determinativi> is used to naturalise the flow of the text. Translation type: functional equivalence. NO AI WAS USED. Thanks FutureRave"
+
+REFERENCE           MP_CONNECTED
+LANG_ENGLISH        "&&1 si è connesso."
+
+REFERENCE           MENU_MINPLAYERS_CAPS
+LANG_ENGLISH        "MINIMO GIOCATORI"
+
+REFERENCE           MENU_MINPLAYERS_HINT
+LANG_ENGLISH        "La partita rimarrà sospesa alla schermata di caricamento fino a quando il numero di giocatori sarà raggiunto."
+
+REFERENCE           MENU_CUSTOMMAPS_CAPS
+LANG_ENGLISH        "MAPPE PERSONALIZZATE"
+
+REFERENCE           MENU_NOCUSTOMMAPS
+LANG_ENGLISH        "Non sei in possesso di mappe personalizzate."
+
+REFERENCE           MENU_MOUSE_RAW_INPUT_CAPS
+LANG_ENGLISH        "RAW INPUT"
+// #same
+REFERENCE           PLATFORM_FOV_SCALE_CAPS
+LANG_ENGLISH        "SCALA FOV"
+
+REFERENCE           PLATFORM_CONTROLLER_VIBRATION_CAPS
+LANG_ENGLISH        "VIBRAZIONE GAMEPAD"
+
+REFERENCE           MENU_APPLY_RESTART_GAME
+LANG_ENGLISH        "Per applicare la modifica a questa impostazione, riavvia il gioco."
+
+REFERENCE           MENU_MOUSE_ACCEL_CAPS
+LANG_ENGLISH        "ACCELERAZIONE MOUSE"
+
+REFERENCE           MENU_MOUSE_FIX_POOLINGRATE_CAPS
+LANG_ENGLISH        "FIX LAG CON FREQUENZA DI POLLING ELEVATA"
+
+REFERENCE           MENU_NOBORDER_CAPS
+LANG_ENGLISH        "NO BORDO SCHERMO"
+
+REFERENCE           MENU_MAXFPS_CAPS
+LANG_ENGLISH        "FPS MASSIMI"
+
+REFERENCE           MENU_STREAMER_MODE_CAPS
+LANG_ENGLISH        "MODALITÀ STREAMER"
+
+REFERENCE           MENU_ENGINE_SLEEPS_CAPS
+LANG_ENGLISH        "RIDUCI SOSPENSIONI DEL PROCESSO"
+// Sostituto <engine> per processo. Sarebbe corretto fare lo stesso in inglese
+
+REFERENCE           MENU_RECORDCLIENTDEMOS_CAPS
+LANG_ENGLISH        "AVVIA REGISTRAZIONE DEMO LATO CLIENT"
+
+REFERENCE           MENU_RECORDSERVERDEMOS_CAPS
+LANG_ENGLISH        "AVVIA REGISTRAZIONE DEMO LATO SERVER"
+// It's not easy to translate demo, but in this context, recent Activision support articles have replaced 'demo' with 'registration'. Here it is kept
+
+REFERENCE           MENU_IDENTIFIER_CAPS
+LANG_ENGLISH        "MOSTRA IDENTIFICATIVO GIOCO"
+
+REFERENCE           MENU_FLASH_HASHES_CAPS
+LANG_ENGLISH        "FLASH AUTOMATICO HASH SCRIPT"
+// Omissione [degli] script
+
+REFERENCE           MENU_FLASH_HASHES_NOW_CAPS
+LANG_ENGLISH        "MOSTRA GLI HASH DEGLI SCRIPT SUBITO"
+
+ENDMARKER
