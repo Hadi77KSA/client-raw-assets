@@ -1,6 +1,11 @@
 >game,T6
 >name,plutonium_zm
 
+>level.ipak_read,base
+
+image,pc_lock
+material,lock
+
 >ipak,plutonium_zm
 
 image,menu_mp_lobby_customgame

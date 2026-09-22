@@ -420,11 +420,7 @@ CoD.OptionsControls.CreateGamepadTab = function (gamepadTab, localClientIndex)
 	CoD.OptionsControls.Button_AddChoices_LookSensitivity(gamepadButtonList:addProfileLeftRightSelector(localClientIndex, Engine.Localize("MENU_LOOK_SENSITIVITY_CAPS"), "input_viewSensitivity", Engine.Localize("PLATFORM_LOOK_SENSITIVITY_DESC")))
 	if UIExpression.IsInGame() == 1 and UIExpression.DvarBool(nil, "sv_allowAimAssist") == 0 then
 		local targetAssistSelector = gamepadButtonList:addButton(Engine.Localize("MENU_TARGET_ASSIST_CAPS"), Engine.Localize("MENU_TARGET_ASSIST_DISABLED_INGAME"))
-		if CoD.isZombie then
-			targetAssistSelector:disable()
-		else
-			targetAssistSelector:lock()
-		end
+		targetAssistSelector:lock()
 	else
 		local targetAssistSelector = gamepadButtonList:addProfileLeftRightSelector(localClientIndex, Engine.Localize("MENU_TARGET_ASSIST_CAPS"), "input_targetAssist", Engine.Localize("MENU_TARGET_ASSIST_DESC"))	
 		CoD.Options.Button_AddChoices_EnabledOrDisabled(targetAssistSelector)
