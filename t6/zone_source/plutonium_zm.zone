@@ -1,7 +1,7 @@
 >game,T6
 >name,plutonium_zm
 
->level.ipak_read,mp
+>ipak,plutonium_zm
 
 image,menu_mp_lobby_customgame
 material,menu_mp_lobby_customgame
